@@ -2,6 +2,7 @@
 * Ally Palanzi
 * Una Kravets
 * wwww.ukravedesign.com
+* Updated: we'll put the date that we launch;
 */
 
 
@@ -116,7 +117,47 @@
 p {
 	font-family: "Archer Medium", serif;
 	font-size: 18px;
+    color:#373C42;
 }
+/* section headlines */
+h1 {
+    font-family:'Archer SemiBold', serif;
+    font-size:60px;
+    color:#373C42;
+}
+/* our names */
+h2{
+    font-family:'Archer SemiBold', serif;
+    font-size:60px;
+    color:#21A39D;
+}
+/* subheadlines */
+h3{
+    font-family:'Archer SemiBold Italic', serif;
+    font-size:35px;
+    color:#85CCAB;
+}
+/* headlines within sections ex. mobile, web dev, etc. */
+h4{
+    font-family:'Archer SemiBold Italic', serif;
+    font-size:35px;
+    color:#F1F1F2;
+}
+/* contact area gets it's own styles because they are all different hooray */
+#contact p{
+    color:#F1F1F2;
+}
+/* get in touch */
+#contact h1{
+    font-family:'Archer SemiBold', serif;
+    font-size:55px;
+    color:#F1F1F2;
+}
+
+#contact h2{
+
+}
+
 
 /* #Links
 ================================================== */
