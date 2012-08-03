@@ -19,7 +19,8 @@ UKRAVE COLORS!!
 INDEX:
     1. #topsection
     2. #aboutsection
-    3. 
+    3. #we-make
+    4. #gallery
 
 */
 
@@ -133,10 +134,6 @@ INDEX:
         font-color: #FFF;
     }
 
-	body{}
-
-	#container{
-    }
 
 
 
@@ -424,8 +421,7 @@ h4{
     #we-make-container{
         width:100%;
         background-color:#21A39D;
-        padding-top:70px;
-        padding-bottom:90px;
+        padding-bottom:60px;
 
     }
 
@@ -439,12 +435,11 @@ h4{
         margin:0px auto;
         width:100%;
         max-width:1020px;
-        margin-top:40px;
     }
   
     .icon-container{
         width:280px;
-        margin-top:40px;
+        margin-bottom:40px;
         margin-right:30px;
         margin-left:30px;
         float:left;
@@ -464,7 +459,6 @@ h4{
     #gallery-container{
         width:100%;
         background-color:#85CCAB;
-        padding-top:70px;
     }
 
     #gallery{
