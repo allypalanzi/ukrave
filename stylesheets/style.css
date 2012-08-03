@@ -6,6 +6,23 @@
 */
 
 
+/* Notes :)
+================================================== 
+
+UKRAVE COLORS!!
+    selection   : #DFDD24
+    mint        : #85CCAB
+    salmon      : #F5917D
+    teal        : #21A39D
+    light gray  : #F1F1F2
+
+INDEX:
+    1. #topsection
+    2. #aboutsection
+
+*/
+
+
 /* #Reset
 ================================================== */
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -103,11 +120,17 @@
 
 /* #Basic Styles
 ================================================== */
-	body{}
+	body{
+        width:100%;
+    }
 
-	#container{}
+	#container{
+    }
 
-
+    ::selection{
+        background: #DFDD24;
+        font-color: #FFF;
+    }
 
 
 
@@ -118,16 +141,21 @@ p {
 	font-family: "Archer Medium", serif;
 	font-size: 18px;
     color:#373C42;
+    line-height:1.3em;
 }
 /* section headlines */
 h1 {
     font-family:'Archer SemiBold', serif;
     font-size:60px;
     color:#373C42;
+    text-align: center;
+    text-transform: lowercase;
+    padding: 90px 20px;
 }
 /* our names */
 h2{
     font-family:'Archer SemiBold', serif;
+    text-transform: lowercase;
     font-size:60px;
     color:#21A39D;
 }
@@ -161,7 +189,6 @@ h4{
 
 /* #Links
 ================================================== */
-
 
 
 /* #Lists
@@ -202,4 +229,161 @@ h4{
 	@media only screen and (max-width: 479px) {}
 
 
+/* #Top Section
+================================================== */
 
+#topsection{
+    position:absolute;
+    width: 100%;
+    height: 768px;
+    background: #21A39D;
+}
+
+#top_chevron {
+    position:absolute;
+    width:100%;
+    background: url(../images/chevron.png) repeat-x;
+    height:360px;
+    margin-top: 150px;
+}
+
+#top_bigcircle_logo {
+    position:relative;
+    background: url(../images/bigcirclelogo.png) no-repeat;
+    width: 505px;
+    height: 505px;
+    margin:60px auto;
+}
+
+/* #About Section
+================================================== */
+
+#aboutsection{
+    position:absolute;
+    width: 100%;
+    height: auto;
+    background: url(../images/noisebg.png), #F1F1F2;
+    margin-top:768px;
+    padding-bottom:100px;
+}
+
+    #aboutsection p{
+        font-family: "Archer Semibold", serif;
+    }
+
+    #aboutsection h3{
+        margin: 10px 0;
+    }
+
+#aboutus_container{
+    width:900px;
+    height:300px;
+    margin: 0 auto;
+}
+
+.aboutus_photo{
+   width: 340px;
+   height: 340px;
+   background: rgba(0,0,0,0); 
+       -moz-border-radius: 190px; 
+       -webkit-border-radius: 190px; 
+       border-radius: 190px;
+    border: 20px solid #85CCAB;
+    float:left;
+}
+
+.backup_photo{
+   width: 340px;
+   height: 340px;
+   background: #373C42; 
+       -moz-border-radius: 190px; 
+       -webkit-border-radius: 190px; 
+       border-radius: 190px;
+    border: 20px solid #85CCAB;
+    position:absolute;
+}
+
+    #ally .backup_photo{
+        margin-left:520px;
+    }
+
+#una h3[rel="unaportlink"]{
+    display:none;
+    position:absolute;
+    width:230px;
+    margin:180px 80px;
+    z-index:2;
+}
+
+#ally h3[rel="allyportlink"]{
+    display:none;
+    position:absolute;
+    margin: 180px 600px;
+    width: 230px;
+    z-index:2;
+}
+
+#una_photo {
+    background: url(https://sphotos-b.xx.fbcdn.net/hphotos-ash3/547663_3680708936134_247594359_n.jpg) 50%, #21A39D;
+    background-size:100%; /* makes the image smaller  (fits a square, then masked by circle) */
+    z-index:1;
+    position:relative;
+}
+
+#ally_photo {
+    background: url(https://sphotos-a.xx.fbcdn.net/hphotos-snc6/184069_2279636157393_2615079_n.jpg) 10%, #21A39D;
+    z-index:1;
+    position:relative;
+}
+
+#una_photo:hover, #ally_photo:hover {
+    opacity:.3;
+}
+
+#una, #ally{
+    height:500px;
+}
+
+.aboutus_text{
+    width:420px;
+    float:left;
+}
+
+    #una .aboutus_text{
+        margin-left:90px;
+    }
+
+    #ally .aboutus_text{
+        margin-right:90px;
+    }
+
+#ally .aboutus_text, #ally .aboutus_photo{
+    float:right;
+}
+
+.socialicons_sm{
+    margin-top:20px;
+}
+
+.socialicons_sm div {
+    height:34px;
+    width: 34px;
+    margin: 0 5px 0 0;
+    background: url(../images/socialicons_sm.png);
+    float:left;
+}
+
+#allyp{background-position: -5px -5px}
+#allyp:hover{background-position: -5px -43px}
+#dribbble{background-position: -48px -5px}
+#dribbble:hover{background-position: -48px -43px}
+#flickr{background-position: -91px -5px}
+#flickr:hover{background-position: -91px -43px}
+#behance{background-position: -134px -5px}
+#behance:hover{background-position: -134px -43px}
+#twitter{background-position: -177px -5px}
+#twitter:hover{background-position: -177px -43px}
+#unak{background-position: -221px -5px}
+#unak:hover{background-position: -221px -43px}
+#instagram{background-position: -263px -5px}
+#instagram:hover{background-position: -263px -43px}
