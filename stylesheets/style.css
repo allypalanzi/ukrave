@@ -127,6 +127,7 @@ INDEX:
     }
 
 	#container{
+        width:100%;
     }
 
     ::selection{
@@ -134,7 +135,8 @@ INDEX:
         font-color: #FFF;
     }
 
-
+    .fl {float:left;}
+    .fr {float:right;}
 
 
 
@@ -154,7 +156,9 @@ h1 {
     color:#373C42;
     text-align: center;
     text-transform: lowercase;
-    padding: 90px 20px;
+    padding: 80px 0px;
+    display:block;
+    width:100%;
 }
 /* our names */
 h2{
@@ -214,51 +218,13 @@ h4{
 ================================================== */
 
 
-/* #Media Queries
-================================================== */
-
-	/* Smaller than standard 960 (devices and browsers) */
-	@media only screen and (max-width: 959px) {
-        h1{
-            font-size:55px;
-        }
-      
-    }
-
-	/* Tablet Portrait size to standard 960 (devices and browsers) */
-	@media only screen and (min-width: 768px) and (max-width: 959px) {
-
-
-
-    }
-
-	/* All Mobile Sizes (devices and browser) */
-	@media only screen and (max-width: 767px) {
-        h1{
-            font-size:45px;
-        }
-    }
-
-	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-	@media only screen and (min-width: 480px) and (max-width: 767px) {
-
-}
-
-	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-	@media only screen and (max-width: 479px) {
-        h1{
-            font-size:50px;
-        }
-    }
-
-
 /* #Top Section
 ================================================== */
 
 #topsection{
-    position:absolute;
+    padding: 20px 0;
     width: 100%;
-    height: 768px;
+    height: auto;
     background: #21A39D;
 }
 
@@ -267,15 +233,26 @@ h4{
     width:100%;
     background: url(../images/chevron.png) repeat-x;
     height:360px;
-    margin-top: 150px;
+    margin-top: 90px;
 }
 
 #top_bigcircle_logo {
-    position:relative;
+    position: relative;
     background: url(../images/bigcirclelogo.png) no-repeat;
-    width: 505px;
-    height: 505px;
-    margin:60px auto;
+    background-position: top;
+    background-size: 100%;
+    min-height: 200px;
+    height: 100%;
+    max-height: 505px;
+    margin: 60px auto;
+    min-width: 200px;
+    max-width: 505px;
+}
+
+#top_bigcircle_centerer{
+    max-width: 560px;
+    padding:0px 20%;
+    margin: 0 auto;
 }
 
     /* Smaller than standard 960 (devices and browsers) */
@@ -283,6 +260,7 @@ h4{
     }
     /* Tablet Portrait size to standard 960 (devices and browsers) */
     @media only screen and (min-width: 768px) and (max-width: 959px) {
+
     }
 
     /* All Mobile Sizes (devices and browser) */
@@ -291,10 +269,22 @@ h4{
 
     /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
     @media only screen and (min-width: 480px) and (max-width: 767px) {
+
+    }
+
+    @media only screen and (max-width: 800px) {
+        #top_chevron{
+            background-size:15%;
+            background-position: top;
+            margin-top: 5%;
+        }
+
     }
 
     /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
     @media only screen and (max-width: 479px) {
+
+
     }
 
 
@@ -302,12 +292,10 @@ h4{
 ================================================== */
 
 #aboutsection{
-    position:absolute;
+    position: absolute;
     width: 100%;
-    height: auto;
     background: url(../images/noisebg.png), #F1F1F2;
-    margin-top:768px;
-    padding-bottom:100px;
+    padding-bottom: 100px;
 }
 
     #aboutsection p{
@@ -319,7 +307,7 @@ h4{
     }
 
 #aboutus_container{
-    width:900px;
+    max-width:900px;
     height:300px;
     margin: 0 auto;
 }
@@ -335,7 +323,7 @@ h4{
     float:left;
 }
 
-.backup_photo{
+/* .backup_photo{
    width: 340px;
    height: 340px;
    background: #373C42; 
@@ -343,39 +331,20 @@ h4{
        -webkit-border-radius: 190px; 
        border-radius: 190px;
     border: 20px solid #85CCAB;
-    position:absolute;
-}
-
-    #ally .backup_photo{
-        margin-left:520px;
-    }
-
-#una h3[rel="unaportlink"]{
-    display:none;
-    position:absolute;
-    width:230px;
-    margin:180px 80px;
-    z-index:2;
-}
-
-#ally h3[rel="allyportlink"]{
-    display:none;
-    position:absolute;
-    margin: 180px 600px;
-    width: 230px;
-    z-index:2;
-}
+} */
 
 #una_photo {
     background: url(https://sphotos-b.xx.fbcdn.net/hphotos-ash3/547663_3680708936134_247594359_n.jpg) 50%, #21A39D;
     background-size:100%; /* makes the image smaller  (fits a square, then masked by circle) */
     z-index:1;
+    background-position:center; 
     position:relative;
 }
 
 #ally_photo {
     background: url(https://sphotos-a.xx.fbcdn.net/hphotos-snc6/184069_2279636157393_2615079_n.jpg) 10%, #21A39D;
     z-index:1;
+    background-position:center; 
     position:relative;
 }
 
@@ -388,7 +357,7 @@ h4{
 }
 
 .aboutus_text{
-    width:420px;
+    max-width:420px;
     float:left;
 }
 
@@ -403,6 +372,11 @@ h4{
 #ally .aboutus_text, #ally .aboutus_photo{
     float:right;
 }
+
+/*.fullphoto{
+    width: 380px;
+    height: 380px;
+}*/
 
 .socialicons_sm{
     margin-top:20px;
@@ -434,17 +408,48 @@ h4{
 
     /* Smaller than standard 960 (devices and browsers) */
     @media only screen and (max-width: 959px) {
-    }
+
+        #una, #ally {
+            height: auto;
+            float: none;
+            padding-bottom:70px;
+        }
+
+        #una_photo, #ally_photo{
+            float: none;
+            margin:0 auto;
+            position:relative;
+        }
+
+        #una .aboutus_text, #ally .aboutus_text {
+            max-width: 650px;
+            margin: 0 auto;
+            padding: 30px 40px;
+            float:none;
+            position: relative;
+        }
+
+        #ally .aboutus_text, #ally .aboutus_photo{
+            float:none;
+        }
+
     /* Tablet Portrait size to standard 960 (devices and browsers) */
     @media only screen and (min-width: 768px) and (max-width: 959px) {
+
     }
 
     /* All Mobile Sizes (devices and browser) */
     @media only screen and (max-width: 767px) {
+        #topsection{
+            height:500px;
+        }
     }
 
     /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
     @media only screen and (min-width: 480px) and (max-width: 767px) {
+        #topsection{
+            height:400px;
+        }
     }
 
     /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
@@ -466,6 +471,10 @@ h4{
     #we-make{
         max-width:1020px;
         width:90%;
+        margin:0px auto;
+    }
+
+    #we-make div{
         margin:0px auto;
     }
 
@@ -504,6 +513,8 @@ h4{
 
     /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
     @media only screen and (min-width: 480px) and (max-width: 767px) {
+
+
     }
 
     /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
