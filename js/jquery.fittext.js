@@ -1,27 +1,5 @@
-//************ Hovers for Our Photos *********************//
-
-$(function (){
-        $('#una_photo').hover(function(){
-			$('h3[rel="unaportlink"]').show();
-        }
-        ,function(){
-        $('h3[rel="unaportlink"]').hide();
-    });
- });
-
-$(function (){
-        $('#ally_photo').hover(function(){
-        	$('h3[rel="allyportlink"]').show();
-        }
-        ,function(){
-        $('h3[rel="allyportlink"]').hide();
-    });
- });
-
-
-
-//************ FIT TEXT *********************//
-/*
+/*global jQuery */
+/*!	
 * FitText.js 1.0
 *
 * Copyright 2011, Dave Rupert http://daverupert.com
@@ -32,16 +10,16 @@ $(function (){
 */
 
 (function( $ ){
-    
+	
   $.fn.fitText = function( kompressor, options ) {
-       
+	   
     // Setup options
     var compressor = kompressor || 1,
         settings = $.extend({
           'minFontSize' : Number.NEGATIVE_INFINITY,
           'maxFontSize' : Number.POSITIVE_INFINITY
         }, options);
-    
+	
     return this.each(function(){
 
       // Store the object
@@ -54,14 +32,12 @@ $(function (){
 
       // Call once to set.
       resizer();
-                
+				
       // Call on resize. Opera debounces their resize by default. 
       $(window).on('resize', resizer);
-        
+      	
     });
 
   };
 
 })( jQuery );
-
-//************ END FITTEXT *********************//
