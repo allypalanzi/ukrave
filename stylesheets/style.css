@@ -180,6 +180,7 @@ h4{
     font-family:'Archer SemiBold Italic', serif;
     font-size:35px;
     color:#F1F1F2;
+    padding-bottom:6px;
 }
 /* contact area gets it's own styles because they are all different hooray */
 #contact p{
@@ -466,6 +467,7 @@ h4{
         #ally .aboutus_text, #ally .aboutus_photo{
             float:none;
         }
+    }
 
     /* Tablet Portrait size to standard 960 (devices and browsers) */
     @media only screen and (min-width: 768px) and (max-width: 959px) {
@@ -493,8 +495,6 @@ h4{
         }
     }
 
-}
-
 /*We make cool & pretty things
 ================================================== */
 
@@ -509,22 +509,20 @@ h4{
         width:100%;
         background-color:#21A39D;
         padding-bottom:60px;
-
-
-
     }
 
     #we-make{
         max-width:1020px;
-        width:90%;
+        width:100%;
         margin:0px auto;
     }
 
     #all-icon-container{
         margin:0px auto;
-        width:100%;
-        max-width:1020px;
+
     }
+
+ 
   
     .icon-container{
         max-width:300px;
@@ -542,11 +540,16 @@ h4{
 
     /* Smaller than standard 960 (devices and browsers) */
     @media only screen and (max-width: 959px) {
+
+          #all-icon-container{
+                max-width:680px;
+            }
+
     }
     /* Tablet Portrait size to standard 960 (devices and browsers) */
     @media only screen and (min-width: 768px) and (max-width: 959px) {
-    }
 
+    }
     /* All Mobile Sizes (devices and browser) */
     @media only screen and (max-width: 767px) {
     }
@@ -557,8 +560,7 @@ h4{
 
     /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
     @media only screen and (max-width: 479px) {
-            .icon-container{
-            }
+           
     }
 
 /* Gallery
