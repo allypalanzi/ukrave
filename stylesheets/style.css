@@ -124,6 +124,11 @@ INDEX:
 ================================================== */
 	body{
         width:100%;
+          -webkit-transition: all 1s ease-in-out;
+          -moz-transition: all 1s ease-in-out;
+          -o-transition: all 1s ease-in-out;
+          -ms-transition: all 1s ease-in-out;
+          transition: all 1s ease-in-out;
     }
 
     ::selection{
@@ -494,6 +499,7 @@ h4{
 #we-make-chevron{
     background: url(../images/chevron-teal.png), repeat-x;
     height:37px;
+    margin-top:-37px;
 }
 
     #we-make-container{
@@ -518,15 +524,13 @@ h4{
     }
   
     .icon-container{
-        width:280px;
-        margin-bottom:40px;
-        margin-right:30px;
-        margin-left:30px;
+        max-width:300px;
+        margin: 20px;
         float:left;
     }
 
     .icon{
-        width:280px;
+        max-width:280px;
     }
 
     .icon-text{
