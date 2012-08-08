@@ -126,13 +126,20 @@ INDEX:
         width:100%;
     }
 
+<<<<<<< HEAD
 	#container{
         width:100%;
     }
 
+=======
+>>>>>>> 72e404778b89395329214c518ac1231fb2a870fc
     ::selection{
         background: #DFDD24;
-        font-color: #FFF;
+        color: #FFF;
+    }
+
+     .clear{
+        clear:both;
     }
 
     .fl {float:left;}
@@ -218,14 +225,57 @@ h4{
 ================================================== */
 
 
+<<<<<<< HEAD
+=======
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {
+        
+      
+    }
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+
+
+    }
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+       
+    }
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+        h1{
+            font-size:50px;
+        }
+    }
+
+
+
+
+>>>>>>> 72e404778b89395329214c518ac1231fb2a870fc
 /* #Top Section
 ================================================== */
 
 #topsection{
     padding: 20px 0;
     width: 100%;
+<<<<<<< HEAD
     height: auto;
+=======
+>>>>>>> 72e404778b89395329214c518ac1231fb2a870fc
     background: #21A39D;
+    height:700px;
 }
 
 #top_chevron {
@@ -241,12 +291,20 @@ h4{
     background: url(../images/bigcirclelogo.png) no-repeat;
     background-position: top;
     background-size: 100%;
+<<<<<<< HEAD
     min-height: 200px;
     height: 100%;
     max-height: 505px;
     margin: 60px auto;
     min-width: 200px;
     max-width: 505px;
+=======
+    height:505px;
+    margin: 60px auto;
+    min-width: 200px;
+    max-width: 505px;
+
+>>>>>>> 72e404778b89395329214c518ac1231fb2a870fc
 }
 
 #top_bigcircle_centerer{
@@ -292,10 +350,15 @@ h4{
 ================================================== */
 
 #aboutsection{
+<<<<<<< HEAD
     position: absolute;
     width: 100%;
     background: url(../images/noisebg.png), #F1F1F2;
     padding-bottom: 100px;
+=======
+    width: 100%;
+    background: url(../images/noisebg.png),#F1F1F2;
+>>>>>>> 72e404778b89395329214c518ac1231fb2a870fc
 }
 
     #aboutsection p{
@@ -308,7 +371,10 @@ h4{
 
 #aboutus_container{
     max-width:900px;
+<<<<<<< HEAD
     height:300px;
+=======
+>>>>>>> 72e404778b89395329214c518ac1231fb2a870fc
     margin: 0 auto;
 }
 
@@ -344,7 +410,11 @@ h4{
 #ally_photo {
     background: url(https://sphotos-a.xx.fbcdn.net/hphotos-snc6/184069_2279636157393_2615079_n.jpg) 10%, #21A39D;
     z-index:1;
+<<<<<<< HEAD
     background-position:center; 
+=======
+    background-position:left; 
+>>>>>>> 72e404778b89395329214c518ac1231fb2a870fc
     position:relative;
 }
 
@@ -369,7 +439,7 @@ h4{
         margin-right:90px;
     }
 
-#ally .aboutus_text, #ally .aboutus_photo{
+#ally .aboutus_photo{
     float:right;
 }
 
@@ -456,15 +526,23 @@ h4{
     @media only screen and (max-width: 479px) {
     }
 
-
+}
 
 /*We make cool & pretty things
 ================================================== */
+
+    
+#we-make-chevron{
+    background: url(../images/chevron-teal.png), repeat-x;
+    height:37px;
+}
 
     #we-make-container{
         width:100%;
         background-color:#21A39D;
         padding-bottom:60px;
+
+
 
     }
 
@@ -519,10 +597,18 @@ h4{
 
     /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
     @media only screen and (max-width: 479px) {
+            .icon-container{
+            }
     }
 
 /* Gallery
 ================================================== */
+
+    #gallery-chevron{
+    background: url(../images/chevron-mint.png), repeat-x;
+    height:37px;
+    margin-top:-37px;
+}
 
     #gallery-container{
         width:100%;
@@ -535,9 +621,7 @@ h4{
         margin:0px auto;
     }
 
-    .clear{
-        clear:both;
-    }
+   
 
     /* Smaller than standard 960 (devices and browsers) */
     @media only screen and (max-width: 959px) {
