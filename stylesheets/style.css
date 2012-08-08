@@ -490,10 +490,18 @@ h4{
 /*We make cool & pretty things
 ================================================== */
 
+    
+#we-make-chevron{
+    background: url(../images/chevron-teal.png), repeat-x;
+    height:37px;
+}
+
     #we-make-container{
         width:100%;
         background-color:#21A39D;
         padding-bottom:60px;
+
+
 
     }
 
@@ -548,6 +556,12 @@ h4{
 
 /* Gallery
 ================================================== */
+
+    #gallery-chevron{
+    background: url(../images/chevron-mint.png), repeat-x;
+    height:37px;
+    margin-top:-37px;
+}
 
     #gallery-container{
         width:100%;
