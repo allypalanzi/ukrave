@@ -475,19 +475,22 @@ h4{
     /* All Mobile Sizes (devices and browser) */
     @media only screen and (max-width: 767px) {
         #topsection{
-            height:500px;
+            height:600px;
         }
     }
 
     /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
     @media only screen and (min-width: 480px) and (max-width: 767px) {
         #topsection{
-            height:400px;
+            height:550px;
         }
     }
 
     /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
     @media only screen and (max-width: 479px) {
+        #topsection{
+            height:480px;
+        }
     }
 
 }
