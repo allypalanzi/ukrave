@@ -42,10 +42,21 @@
 
 <!-- TOP SECTION
 	================================================== -->
-	<div id="nav"></div>
+	<div id="nav-container">
+
+		<div id="nav">
+			<ul>
+				<li><a href="#about" rel="" id="anchor1" class= "anchorLink">about us</a></li>
+				<li><a href="#services" rel="" id="anchor1" class= "anchorLink">services</a></li>
+				<li><a href="#top" rel="" id="anchor1" class= "anchorLink"><center><img src="images/ukrave-nav-logo.png"></center></a></li>
+				<li class="right"><a href="#work" rel="" id="anchor1" class= "anchorLink">work</a></li>
+				<li class="right"><a href="#contact" rel="" id="anchor1" class= "anchorLink">contact</a></li>
+			</ul>
+		</div>
+	</div>
+		<a name="top" id="top"></a>
 
 	<div id="topsection">
-
 		<div id="chevronandlogo">
 			<div id="top_chevron"></div>
 				<div id="top_bigcircle_centerer">
@@ -62,6 +73,7 @@
 
 <!-- ABOUT SECTION
 	================================================== -->
+		<a name="about" id="about"></a>
 
 		<div id="aboutsection">
 		<div id="aboutus_container">
@@ -117,6 +129,9 @@
 
 <!-- WE MAKE SECTION
 	================================================== -->
+
+<a name="services" id="services"></a>
+
 <div id="we-make-chevron"></div>
 	<div id="we-make-container">
 		<div id="we-make">
@@ -183,6 +198,9 @@
 
 <!-- GALLERY SECTION
 	================================================== -->
+
+	<a name="work" id="work"></a>
+
 	<div id="gallery-chevron"></div>
 
 	<div id="gallery-container">
@@ -199,9 +217,39 @@
 </body>
 
 	<script type="text/javascript">
-		$("h1").fitText(1.2, { minFontSize: '20px', maxFontSize: '60px' });
+		
+	$(document).ready(function() {
+	$("a.anchorLink").anchorAnimate()
+});
+
+jQuery.fn.anchorAnimate = function(settings) {
+
+ 	settings = jQuery.extend({
+		speed : 1100
+	}, settings);	
+	
+	return this.each(function(){
+		var caller = this
+		$(caller).click(function (event) {	
+			event.preventDefault()
+			var locationHref = window.location.href
+			var elementClick = $(caller).attr("href")
+			
+			var destination = $(elementClick).offset().top;
+			$("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination}, settings.speed, function() {
+				window.location.hash = elementClick
+			});
+		  	return false;
+		})
+	})
+}
+
+$("h1").fitText(1.2, { minFontSize: '20px', maxFontSize: '60px' });
 		$("#fittext2").fitText(1.2);
 		$("#fittext3").fitText(1.1, { minFontSize: 50, maxFontSize: '75px' });
+
+
 	</script>
+
 
 </html>

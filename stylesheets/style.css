@@ -259,13 +259,40 @@ h4{
 
 /* #Nav 
 ================================================== */
-#nav{
+#nav-container{
     height:40px;
     width:100%;
     background-color:#373C42;
     position:fixed;
     z-index:5;
 }
+
+#nav{
+    width:100%;
+    max-width:1000px;
+    margin:0px auto;
+    padding-left:2.5%;
+    padding-right:2.5%;
+}
+
+#nav li{
+    float:left;
+    margin-top:7px;
+    width:19%;
+}
+
+
+#nav a{
+    text-decoration:none;
+    color:#F1F1F2;
+    font-family: "Archer Medium", serif;
+    font-size:24px;
+}
+
+.right{
+    text-align: right;
+}
+
 
 
 
@@ -551,6 +578,7 @@ h4{
 
     .icon{
         max-width:280px;
+        margin:0px auto;
     }
 
     .icon-text{
@@ -562,7 +590,6 @@ h4{
 
             #all-icon-container-mobile{
                 max-width:700px;
-                width:;
                 margin:0px auto;
             }
 
@@ -589,6 +616,13 @@ h4{
             height:470px;
             overflow-y:hidden;
         }
+        .icon img{
+            width:240px;
+        }
+        .icon{
+            width:240px;
+        }
+
         
 ::-webkit-scrollbar              { background-color:#21A39D; }
 ::-webkit-scrollbar-button              { background-color:#21A39D; }
