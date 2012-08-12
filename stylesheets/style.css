@@ -751,7 +751,14 @@ h5{
         margin:0px auto;
     }
 
-   
+    #gallery h1 a{
+        text-decoration:none;
+        color: #21A39D;
+    }
+
+        #gallery h1 a:hover{
+        color: #F5917D;
+    }
 
     /* Smaller than standard 960 (devices and browsers) */
     @media only screen and (max-width: 959px) {
