@@ -774,6 +774,152 @@ h5{
 
 
 
+/* CONTACT FORM STUFF */
+
+#contactsection{
+    background-color: #373C42;
+}
+
+#contactform{
+position:relative;
+margin:50px auto;    
+max-width:860px;
+min-height:200px;
+padding:30px;
+}
+
+    #contactform div {
+        width:46%;
+        float:left;
+        margin-right:5%;
+    }
+
+    #contactform h1{
+    font-size:80px;
+    text-align:left;
+    font-family:'Archer SemiBold', serif;
+    color:#F1F1F2;
+    padding:0;
+    }
+
+    #contactform h2{
+      font-family: "Archer Medium Italic";
+      font-size: 35px;
+      color:#F1F1F2;
+    }
+
+    #contactform p{
+    }
+
+        #contactform p[rel="message"]{
+          float:right;
+        }
+
+/** we remove the red glow around required fields since we are already using the red star */
+input:required, textarea:required { 
+    -moz-box-shadow:none;  
+    -webkit-box-shadow:none;  
+    -o-box-shadow:none;  
+    box-shadow:none;  
+}
+
+
+
+
+
+
+/** inputs and textarea**/
+input:not([type="submit"]), textarea{
+font-family:"Archer Semibold";
+outline:none;
+border:none;
+display:block;
+width:100%;
+padding:4px 8px;
+color:#3F3F3F;
+font-size:16px;
+/*transition*/
+-webkit-transition:background 0.2s linear,
+                   box-shadow 0.6s linear;
+   -moz-transition:background 0.2s linear,
+                   box-shadow 0.6s linear;
+     -o-transition:background 0.2s linear,
+                   box-shadow 0.6s linear;
+        transition:background 0.2s linear,
+                   box-shadow 0.6s linear;
+}
+
+input:not([type="submit"]):active, 
+textarea:active,
+input:not([type="submit"]):focus, 
+textarea:focus{ /* when its in focus (clicked on) */
+border: none;
+background:#85CCAB;
+/*box-shadow*/
+-webkit-box-shadow:2px 2px 7px #E8E8E8 inset;
+   -moz-box-shadow:2px 2px 7px #E8E8E8 inset;
+        box-shadow:2px 2px 7px #E8E8E8 inset;
+}
+input:not([type="submit"]){
+height: 20px;
+}
+
+input[type="submit"]{
+    margin: -300px 0 0 75%;
+}
+
+/* placeholder */
+::-webkit-input-placeholder  { 
+color:#21A39D; 
+font-style:italic;
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder{ 
+color:#21A39D;
+font-style:italic;
+} 
+textarea{
+min-height:150px;
+resize:vertical
+}
+
+#contactform .message {
+    width: 44%;
+}
+
+p[rel="message"]{width:100%;
+    margin-top:-185px;
+}
+
+
+#contactform div p {
+    color:#F1F1F2;
+}
+
+/** labels**/
+
+label{
+color:#F1F1F2;
+-webkit-transition: color 1s ease;
+   -moz-transition: color 1s ease;
+        transition: color 1s ease;
+}
+label:hover{
+color:#F5917D;
+}
+
+p{
+margin-bottom:10px;
+}
+.indication{
+color:#F1F1F2;
+font-size:12px;
+font-style:italic;
+padding-right:10px;
+}
+.required{
+color:#E5224C;
+}
 
 
 
