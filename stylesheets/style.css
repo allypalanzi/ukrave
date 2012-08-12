@@ -286,7 +286,7 @@ h5{
 
 #nav li{
     float:left;
-    margin-top:7px;
+    padding-top:7px;
     width:19%;
 }
 
@@ -298,11 +298,60 @@ h5{
     font-size:24px;
 }
 
-.right{
+.right-web{
     text-align: right;
 }
+.right-always{
+    text-align:right;
+}
+
+/* Smaller than standard 960 (devices and browsers) */
+    @media only screen and (max-width: 959px) {
+        
+      
+    }
+
+    /* Tablet Portrait size to standard 960 (devices and browsers) */
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
 
 
+
+    }
+
+    /* All Mobile Sizes (devices and browser) */
+    @media only screen and (max-width: 767px) {
+
+       
+    }
+
+    /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+
+}
+
+    /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+    @media only screen and (max-width: 650px) {
+        #nav-container{
+            position:static;
+            height:80px;
+        }
+
+        #nav li{
+            width:40%;
+            margin-left:5%;
+        }
+        li#nav2{
+            width:0px;
+            display:none;
+        }
+        li.right-mobile{
+            text-align:right;
+        }
+        .right-web{
+            text-align: left;
+        }
+
+    }
 
 
 
@@ -698,7 +747,7 @@ h5{
     }
     /* All Mobile Sizes (devices and browser) */
     @media only screen and (max-width: 767px) {
-         #all-icon-container{
+         /*#all-icon-container{
                 width:2050px;
             }
 
@@ -716,7 +765,7 @@ h5{
         }
         .icon-container{
         width:280px;
-    }
+    }*/
 
 
     }
