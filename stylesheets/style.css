@@ -184,6 +184,13 @@ h4{
     color:#F1F1F2;
     padding-bottom:6px;
 }
+
+h5{
+    font-family:'Archer SemiBold', serif;
+    font-size:55px;
+    color:#F1F1F2;
+    padding-bottom:20px;
+}
 /* contact area gets it's own styles because they are all different hooray */
 #contact p{
     color:#F1F1F2;
