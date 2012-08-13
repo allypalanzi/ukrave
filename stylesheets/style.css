@@ -268,6 +268,7 @@ h5{
 
 /* #Nav 
 ================================================== */
+
 #nav-container{
     height:40px;
     width:100%;
@@ -282,6 +283,7 @@ h5{
     margin:0px auto;
     padding-left:2.5%;
     padding-right:2.5%;
+    min-width:320px;
 }
 
 #nav li{
@@ -355,6 +357,10 @@ h5{
 
     @media only screen and (max-width: 680px) {
 
+        #navarrow{
+            display:block;
+        }
+
         #mobilenav li a:hover{
             color:#373C42
         }
@@ -382,6 +388,7 @@ h5{
     }
 
     #mobilenav{
+        min-width:320px;
         display:block;
             -webkit-transition: all 0.5s ease-in-out;
             -moz-transition: all 0.5s ease-in-out;
@@ -411,12 +418,31 @@ h5{
         }
 
         #mobilenavbutton {
-        width:40px;
-        height:40px;
-        background:blue;
+        width:30px;
+        height:30px;
+        padding:5px;
         position:relative;
         z-index:32;
+        margin-left:10px;
         }
+
+
+        #navarrow{
+            width: 0; 
+            height: 0; 
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-top: 15px solid #85CCAB;
+            margin-top: 10px;
+            position:absolute;
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -o-transform:rotate(0deg);
+            transform: rotate(0deg);
+
+        }
+
 
     #nav li[class="navlogo"]{
         margin-left:-40px;

@@ -1,11 +1,29 @@
+$('.mobilelink').click(function(){
+  $('#navarrow').css('margin-top','-221px');
+});
+
 //************ Mobile Nav Pulldown *********************//
 $(function (){
   $('#mobilenavbutton').toggle(function(){
-    $('#mobilenav').css('margin-top','0px');}, 
+    $('#mobilenav').css('margin-top','0px');
+    $("#navarrow").css({
+    '-webkit-transform': 'rotate(180deg)',
+    '-moz-transform': 'rotate(180deg)',
+    '-ms-transform': 'rotate(180deg)',
+    '-o-transform': 'rotate(180deg)',
+    'transform': 'rotate(180deg)',
+  })},
     function(){
-    $('#mobilenav').css('margin-top','-221px');
+    $('#mobilenav').css('margin-top','-221px');    
+    $("#navarrow").css({
+    '-webkit-transform': 'rotate(0deg)',
+    '-moz-transform': 'rotate(0deg)',
+    '-ms-transform': 'rotate(0deg)',
+    '-o-transform': 'rotate(0deg)',
+    'transform': 'rotate(0deg)',
   });
 });
+  });
 //************ Hovers for Our Photos *********************//
 
 $(function (){
