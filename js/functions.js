@@ -1,9 +1,7 @@
-<<<<<<< HEAD
 $('.mobilelink').click(function(){
   $('#navarrow').css('margin-top','-221px');
 });
 
-=======
 // ************** SMOOTH SCROLL ***************//
 
     
@@ -42,7 +40,6 @@ jQuery.fn.anchorAnimate = function(settings) {
 
 
 
->>>>>>> css/js cleaning
 //************ Mobile Nav Pulldown *********************//
 $(function (){
   $('#mobilenavbutton').toggle(function(){
