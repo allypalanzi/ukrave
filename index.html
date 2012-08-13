@@ -24,6 +24,8 @@
   ================================================== -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 	<script src="js/functions.js"></script>
+	<script src="js/swipe.js"></script>
+
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -173,7 +175,88 @@
 	<div id="we-make-container">
 		<div id="we-make">
 				<center><h1> we make cool &amp; pretty things.</h1></center>
-			<div id="all-icon-container-mobile">
+
+		<!-- MOBILE SLIDER
+		================================================== -->
+
+			<div id="show-slider">
+			        <a href='#' class="arrow" onclick='slider.prev();return false;'><img src="images/arrow-left.png" width="15px"></a> 
+			        <a href='#' class="arrow-right" onclick='slider.next();return false;'><img src="images/arrow-right.png" width="15px"></a>
+
+			    <div id='slider' class='swipe'>
+
+			      <div id="slider-container">
+			        <div style='display:block'>
+			          <div class="icon-container">
+			              <div class="icon"><img src="images/mobile.png"></div>
+			                <div class="icon-text">
+			                  <center><h4>mobile interface</h4></center>
+			                  <p>We design the look and feel of your mobile website or application. With the majority of Americans now using smartphones, mobile access is crucial.</p>
+			                </div>
+			            </div>
+			        </div>
+
+			        <div style='display:none'>
+			          <div class="icon-container">
+			            <div class="icon"><img src="images/webdev.png"></div>
+			              <div class="icon-text">
+			                <center><h4>web development</h4></center>
+			                <p>Not only do we love to design beautiful layouts, but we really enjoy coding them too! We personally work with you from concept to deployment.  </p>
+			              </div>
+			            </div>
+			        </div>
+
+			        <div style='display:none'>
+			        	<div class="icon-container">
+							<div class="icon"><img src="images/wordpress.png"></div>
+								<div class="icon-text">
+									<center><h4>wordpress</h4></center>
+									<p>Wordpress bridges the gap between design and usability. We can build your website on this popular platform so you can update it at any time.</p>
+								</div>
+							</div>
+			        </div>
+
+			        <div style='display:none'>
+			        	<div class="icon-container">
+							<div class="icon"><img src="images/responsive.png"></div>
+								<div class="icon-text">
+									<center><h4>responsive design</h4></center>
+									<p>Responsive design is a great way to ensure consistency across all devices. We design with each platform in mind to ensure a great experience.  </p>
+								</div>
+							</div>
+			        </div>
+
+
+			        <div style='display:none'>
+
+						<div class="icon-container">
+							<div class="icon"><img src="images/print.png"></div>
+								<div class="icon-text">
+									<center><h4>print design</h4></center>
+									<p>From business cards and letterheads, to posters and menus &mdash; we have experience designing for a variety of organizations and mediums. </p>
+								</div>
+						</div>
+			        </div>
+
+			        <div style='display:none'>
+			        	<div class="icon-container">
+							<div class="icon"><img src="images/identity.png"></div>
+								<div class="icon-text">
+									<center><h4>branding/identity</h4></center>
+									<p>Identity is key in how a company makes an impression. We work with you to develop or refine your perfect color story, logo, and overall aesthetic</p>
+								</div>
+							</div>
+
+					</div>
+
+			    </div>
+			  </div>
+			</div>
+
+			<!-- END MOBILE SLIDER
+			================================================== -->
+
+
 			<div id="all-icon-container">
 				<div class="icon-container">
 				<div class="icon"><img src="images/mobile.png"></div>
@@ -223,7 +306,8 @@
 					</div>
 				</div>
 
-</div>
+
+
 			<div class="clear"></div>
 			</div>
 			</div>
@@ -291,6 +375,9 @@
 </body>
 
 	<script type="text/javascript">
+
+	var slider = new Swipe(document.getElementById('slider'));
+
 		
 	$(document).ready(function() {
 	$("a.anchorLink").anchorAnimate()
@@ -324,6 +411,7 @@ $("h1").fitText(1.2, { minFontSize: '20px', maxFontSize: '60px' });
 
 
 	</script>
+
 
 
 </html>

@@ -777,8 +777,6 @@ h5{
 
     }
 
- 
-  
     .icon-container{
         position:relative;
         width:300px;
@@ -796,59 +794,98 @@ h5{
         padding-top:15px;
     }
 
+    /* MOBILE SLIDER SHIT */
+    a.arrow {
+        text-decoration: none;
+        float:left;
+        margin-top:50%;
+        margin-left:10px;
+        width:15px;
+    }
+
+    a.arrow-right{
+        float:right;
+        text-decoration: none;
+        margin-top:50%;
+        margin-right:10px;
+        width:15px;
+    }
+
+    #slider{
+        overflow:none;
+        margin:0px auto;
+        max-width:300px;
+    }
+
+    #slider-container{
+        float:left;
+        margin:0px auto;
+    }
+
+    #show-slider{
+        display:none;
+    }
+
+
     /* Smaller than standard 960 (devices and browsers) */
     @media only screen and (max-width: 1100px) {
 
-            #all-icon-container-mobile{
+            #all-icon-container{
                 max-width:700px;
                 margin:0px auto;
             }
 
     }
-    @media only screen and (max-width: 959px) {
-
-
-
-    }
+    @media only screen and (max-width: 959px) {}
     /* Tablet Portrait size to standard 960 (devices and browsers) */
-    @media only screen and (min-width: 768px) and (max-width: 959px) {
-
-
-    }
+    @media only screen and (min-width: 768px) and (max-width: 959px) {}
     /* All Mobile Sizes (devices and browser) */
     @media only screen and (max-width: 767px) {
-         /*#all-icon-container{
-                width:2050px;
+         
+            #all-icon-container{
+                display:none;
             }
-
-        #all-icon-container-mobile{
-            overflow-x:scroll;
-            width:100%;
-            height:470px;
-            overflow-y:hidden;
-        }
-        .icon img{
-            width:240px;
-        }
-        .icon{
-            width:240px;
-        }
-        .icon-container{
-        width:280px;
-    }*/
-
-
+            #we-make{
+                max-width:470px;
+            }
+            .icon img{
+                    width:280px;
+            }
+            .icon{
+                width:280px;
+            }
+            .icon-container{
+                width:280px;
+                margin:0px auto;
+            }
+            #show-slider{
+                display:block;
+            }
+            #slider{
+                max-width:280px;
+            }
     }
 
     /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-    @media only screen and (min-width: 480px) and (max-width: 767px) {
-
-
-}
+    @media only screen and (min-width: 480px) and (max-width: 767px) {}
     /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
     @media only screen and (max-width: 479px) {
-     
+        .icon img{
+            width:220px;
+        }
+        .icon{
+            width:220px;
+        }
+        .icon-container{
+            width:240px;
+            margin:0px auto;
+        }
+        #slider{
+            max-width:240px;
+        }
     }
+
+
 
 /* Gallery
 ================================================== */
@@ -904,11 +941,11 @@ h5{
 
 #contactsection{
     background-color: #373C42;
+
 }
 
 #contactform{
-position:relative;
-margin:50px auto;    
+margin:0px auto;
 max-width:860px;
 min-height:200px;
 padding:30px;
