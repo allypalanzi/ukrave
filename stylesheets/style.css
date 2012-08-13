@@ -273,7 +273,7 @@ h5{
     width:100%;
     background-color:#373C42;
     position:fixed;
-    z-index:5;
+    z-index:50;
 }
 
 #nav{
@@ -288,14 +288,46 @@ h5{
     float:left;
     padding-top:7px;
     width:19%;
+} 
+
+#nav li[class="navlogo"]{
+    width:192px;
+    background-repeat:no-repeat;
+} 
+
+
+#navlogo {
+    position: relative;
+    z-index: 31;
+    width:190px;
+    height:20px;
+    margin-top:10px;
+    float:left;
+    background: url(../images/ukrave-nav-logo.png);
+    display:block;
+    position:relative;
+    z-index:50;
 }
 
+.navlogo a{
+    width:190px;
+    height:20px;
+    display:block;
+}
 
 #nav a{
     text-decoration:none;
     color:#F1F1F2;
     font-family: "Archer Medium", serif;
     font-size:24px;
+    -webkit-transition:color .5s ease-in-out;  
+       -moz-transition:color .5s ease-in-out;  
+          -o-transition:color .5s ease-in-out;  
+             transition:color .5s ease-in-out; 
+}
+
+#nav a:hover{
+    color:#21A39D
 }
 
 .right-web{
@@ -305,53 +337,91 @@ h5{
     text-align:right;
 }
 
-/* Smaller than standard 960 (devices and browsers) */
-    @media only screen and (max-width: 959px) {
-        
-      
-    }
-
-    /* Tablet Portrait size to standard 960 (devices and browsers) */
-    @media only screen and (min-width: 768px) and (max-width: 959px) {
-
-
-
-    }
-
-    /* All Mobile Sizes (devices and browser) */
-    @media only screen and (max-width: 767px) {
-
-       
-    }
-
-    /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-    @media only screen and (min-width: 480px) and (max-width: 767px) {
+#mobilenav{
+    margin-top:-221px;
+    display:none;
 
 }
 
-    /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-    @media only screen and (max-width: 650px) {
-        #nav-container{
-            position:static;
-            height:80px;
+    @media only screen and (max-width: 900px) {
+        .right-always{
+             margin-left:-2%;
         }
 
-        #nav li{
-            width:40%;
-            margin-left:5%;
+        .right-web{
+            margin-left:-5%;
         }
-        li#nav2{
-            width:0px;
+        }
+
+    @media only screen and (max-width: 680px) {
+
+        #mobilenav li a:hover{
+            color:#373C42
+        }
+
+        #mobilenav li{
+            margin:0 auto;
+            clear:both;
+            float:none;
+            position:relative;
+            text-align:center;
+            z-index:10;
+            padding:10px;
+            background:#373C42;
+            border-bottom: 1px solid #85CCAB;
+            width:100%;
+            -webkit-transition:background-color .5s ease-in-out;  
+               -moz-transition:background-color .5s ease-in-out;  
+                  -o-transition:background-color .5s ease-in-out;  
+                     transition:background-color .5s ease-in-out;  
+    }
+
+    #mobilenav li:hover{
+        background: #21A39D;
+        color: #373C42;
+    }
+
+    #mobilenav{
+        display:block;
+            -webkit-transition: all 0.5s ease-in-out;
+            -moz-transition: all 0.5s ease-in-out;
+            -o-transition: all 0.5s ease-in-out;
+            -ms-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+    }
+
+    #mobilebg{
+        height:40px;
+        width:100%;
+        background-color:#373C42;
+        position:fixed;
+        z-index:30;
+        }
+
+        #mobilenav li:first-child{
+            border-top:1px solid #85CCAB;
+        }
+
+        #nav{
+            padding:0;
+        }
+
+        .comp {
             display:none;
         }
-        li.right-mobile{
-            text-align:right;
-        }
-        .right-web{
-            text-align: left;
+
+        #mobilenavbutton {
+        width:40px;
+        height:40px;
+        background:blue;
+        position:relative;
+        z-index:32;
         }
 
+    #nav li[class="navlogo"]{
+        margin-left:-40px;
     }
+ }
 
 
 
