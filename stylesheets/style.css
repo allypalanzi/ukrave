@@ -550,7 +550,7 @@ INDEX:
 }
 
 #ally_photo {
-    background: url(https://sphotos-a.xx.fbcdn.net/hphotos-snc6/184069_2279636157393_2615079_n.jpg) 10%, #21A39D;
+    background: url("../images/ally.jpg") 10%, #21A39D;
     z-index:1;
     background-position:left; 
     position:relative;
@@ -883,17 +883,42 @@ INDEX:
 
 
 /* CONTACT FORM STUFF */
+#contact-arrow-container{
+    max-width:900px;
+    width:100%;
+    margin:0px auto;
+}
+#contact-arrow{
+            width: 0; 
+            height: 0; 
+            border-left: 40px solid transparent;
+            border-right: 40px solid transparent;
+            border-bottom: 40px solid #373C42;
+
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -o-transform:rotate(0deg);
+            transform: rotate(0deg);
+            margin-top:-40px;
+}
 
 #contactsection{
     background-color: #373C42;
 
 }
+#contact-container{
+    max-width:900px;
+    margin:0px auto;
+    width:100%;
+    padding-bottom:40px;
+}
 
 #contactform{
 margin:0px auto;
-max-width:860px;
+max-width:900px;
 min-height:200px;
-padding:30px;
+padding-top:90px;
 }
 
     #contactform div {
@@ -907,22 +932,29 @@ padding:30px;
     text-align:left;
     font-family:'Archer SemiBold', serif;
     color:#F1F1F2;
-    padding:0;
+    padding:0px;
     }
 
     #contactform h2{
       font-family: "Archer Medium Italic";
       font-size: 35px;
       color:#F1F1F2;
+      padding-top:20px;
+      padding-bottom:20px;
     }
 
-    #contactform p{
-    }
 
         #contactform p[rel="message"]{
           float:right;
-        }
+        } 
 
+    a.submittext{
+        font-family: "Archer Bold", serif;
+        font-size: 35px;
+        color:#F59798;
+        text-decoration:none;
+        padding-left:72%;
+            }
 /** we remove the red glow around required fields since we are already using the red star */
 input:required, textarea:required { 
     -moz-box-shadow:none;  
@@ -972,9 +1004,7 @@ input:not([type="submit"]){
 height: 20px;
 }
 
-input[type="submit"]{
-    margin: -300px 0 0 75%;
-}
+
 
 /* placeholder */
 ::-webkit-input-placeholder  { 
@@ -987,8 +1017,8 @@ color:#21A39D;
 font-style:italic;
 } 
 textarea{
-min-height:150px;
-resize:vertical
+min-height:203px;
+resize:vertical;
 }
 
 #contactform .message {
@@ -1030,6 +1060,48 @@ color:#E5224C;
 }
 
 
+/*twitters*/
+
+#twit-container { 
+    
+    width: 400px; 
+    float: left;
+    margin-top:20px;
+    
+}
+
+a.big{
+    font-family: "Archer Bold", serif;
+    font-size: 35px;
+    color:#F59798;
+    text-decoration:none;
+    padding-left:70%;
+}
+
+ul#twitter_update_list { 
+    list-style: none; 
+    font-family: "Archer Medium", serif;
+    font-size: 18px;
+    color:#ffffff;
+    line-height:1.3em;
+}
+ul#twitter_update_list li { 
+    padding-bottom:20px;    
+}
+
+ul#twitter_update_list a{
+    color:#85CCAB;
+    text-decoration:none;
+}
+
+#wordpress-container{
+    width:400px;
+    float:right;
+    background-color: red;
+    height:400px;
+        margin-top:20px;
+
+}
 
 
 

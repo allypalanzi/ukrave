@@ -22,7 +22,7 @@
 
 	<!-- SCRIPTS
   ================================================== -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
 	<script src="js/functions.js"></script>
 	<script src="js/swipe.js"></script>
 
@@ -338,35 +338,48 @@
 
 <!-- CONTACT SECTION
 	================================================== -->
+		<a name="contact" id="contact"></a>
+		<div id="contact-arrow-container"><div id="contact-arrow"></div></div>
+
 <div id="contactsection">
+	<div id="contact-container">
 
  <div id="contactform">
        <h1> get in touch! </h1>
        <h2>we’d love to start a project with you! send us an email or fill out the form below. we promise to contact you back.</h2>
         
-        <form name="contactform" method="post" action="send_form_email.php" autocomplete="on" >
+            <form method='post' action='contact.php' id='form' autocomplete="on" >
+
         	<div>
-			<p> <label for="name" class="user" > Name <span class="required">*</span></label> <input type="text" name="name" id="name"  required="required" placeholder="My name is..."  /> </p>
+			<p> <label for="name" class="user" > Name <span class="required">*</span></label> <input type='text' name='name' required id='name' placeholder="My name is..."  /> </p>
 		</div><br/>
 		<div>
-			<p> <label for="usermail" class="mail-alt"> E-mail address <span class="required">*</span></label> <input type="email" name="usermail" id="usermail" placeholder="We don't even know how to send spam mail" required="required"  /> </p>
+			<p> <label for="email" class="mail-alt"> E-mail address <span class="required">*</span></label> <input type='email' name='email' required id='email'placeholder="We don't even know how to send spam mail" required="required"  /> </p>
 		</div><br/>
 		<div> 
-			<p> <label for="usersite" class="link"> Website </label> <input type="url" name="usersite" id="usersite"  placeholder="We'd love to check it out" /> </p>
+			<p> <label for="website" class="link"> Website </label> <input type="text" name="website" id="website"  placeholder="We'd love to check it out" /> </p>
 		</div><br/>
 		<div> 
-			<p> <label for="subject" class="quote-alt"> Subject </label> <input type="text" name="subject" id="subject"  placeholder="Very Important Info" /> </p>
+			<p> <label for="subject" class="quote-alt"> Subject </label> <input type='text' name='subject'  placeholder="Very Important Info" /> </p>
 		</div><br/>
 		<div class="message"> 
-			<p rel="message"> <label for="message" class="comment"> Message  <span class="required">*</span></label> <textarea placeholder="Now, go on :)" ></textarea> </p>
-			<p class="indication"> All fields with a <span class="required">*</span> are required</p>
-			</div>
-
-			<input type="submit" value=" &raquo; send!" />		
-
+			<p rel="message"> <label for="message" class="comment"> Message  <span class="required">*</span></label> <textarea name='message' required id='message' placeholder="Now go on :)" ></textarea> </p>
+				<a class="submittext" href="#">&raquo;submit</a>
+		</div>
+<div class="clear"></div>
 		</form>		
     </div> 
+
+    <div id="twit-container"><h5>@ukravedesign</h5><ul id="twitter_update_list"></ul><a href="http:://www.twitter.com/ukravedesign" class="big">&raquo;follow</a>
+</div>
+  <script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+  <script type="text/javascript" src="http://twitter.com/statuses/user_timeline/ukravedesign.json?callback=twitterCallback2&count=3"></script>
+  
+<div id="wordpress-container">
+</div>
+<div class="clear"></div>
   </div>
+</div>
 
 <!-- END OF CONTACT SECTION
 	================================================== -->
@@ -388,8 +401,34 @@ $("h1").fitText(1.2, { minFontSize: '20px', maxFontSize: '60px' });
 		$("#fittext3").fitText(1.1, { minFontSize: 50, maxFontSize: '75px' });
 
 
-	</script>
 
+
+	</script>
+<script>
+		    $(function(){
+        $('.submittext').click(function(e){
+
+            // Stop the form actually posting
+            e.preventDefault();
+
+            // Send the request
+            $.post('contact.php', {
+                name: $('#name').val(),
+                email: $('#email').val(),
+                website: $('#website').val(),
+                subject: $('#subject').val(),
+                message: $('#message').val(),
+
+            }, function(d){
+                console.log(d);
+                // Here we handle the response from the script
+                // We are just going to alert the result for now
+                alert(d);
+                
+            });
+        });
+    });
+</script>
 
 
 </html>
