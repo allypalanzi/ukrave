@@ -17,10 +17,11 @@ UKRAVE COLORS!!
     light gray  : #F1F1F2
 
 INDEX:
-    1. #topsection
-    2. #aboutsection
-    3. #we-make
-    4. #gallery
+    1. #nav
+    2. #topsection
+    3. #aboutsection
+    4. #we-make
+    5. #gallery
 
 */
 
@@ -54,70 +55,70 @@ INDEX:
 /* #Fontface
 ================================================== */
 
-@font-face {
-    font-family: 'Archer Medium';
-    src: url('fonts/archerpro-medium.eot');
-    src: url('fonts/archerpro-medium?#iefix') format('embedded-opentype'),
-         url('fonts/archerpro-medium.woff') format('woff'),
-         url('fonts/archerpro-medium.ttf') format('truetype'),
-         url('fonts/archerpro-medium.svg') format('svg');
-    font-weight: normal;
-    font-style: normal;
+    @font-face {
+        font-family: 'Archer Medium';
+        src: url('fonts/archerpro-medium.eot');
+        src: url('fonts/archerpro-medium?#iefix') format('embedded-opentype'),
+             url('fonts/archerpro-medium.woff') format('woff'),
+             url('fonts/archerpro-medium.ttf') format('truetype'),
+             url('fonts/archerpro-medium.svg') format('svg');
+        font-weight: normal;
+        font-style: normal;
 
-}
-@font-face {
-    font-family: 'Archer Medium Italic';
-    src: url('fonts/archerpro-mediumita.eot');
-    src: url('fonts/archerpro-mediumita.eot?#iefix') format('embedded-opentype'),
-         url('fonts/archerpro-mediumita.woff') format('woff'),
-         url('fonts/archerpro-mediumita.ttf') format('truetype'),
-         url('fonts/archerpro-mediumita.svg') format('svg');
-    font-weight: italic;
-    font-style: normal;
+    }
+    @font-face {
+        font-family: 'Archer Medium Italic';
+        src: url('fonts/archerpro-mediumita.eot');
+        src: url('fonts/archerpro-mediumita.eot?#iefix') format('embedded-opentype'),
+             url('fonts/archerpro-mediumita.woff') format('woff'),
+             url('fonts/archerpro-mediumita.ttf') format('truetype'),
+             url('fonts/archerpro-mediumita.svg') format('svg');
+        font-weight: italic;
+        font-style: normal;
 
-}
-@font-face {
-    font-family: 'Archer Bold';
-    src: url('fonts/archerpro-bold.eot');
-    src: url('fontsarcherpro-bold?#iefix') format('embedded-opentype'),
-         url('fonts/archerpro-bold.woff') format('woff'),
-         url('fonts/archerpro-bold.ttf') format('truetype'),
-         url('fonts/archerpro-bold.svg') format('svg');
-    font-style: normal;
+    }
+    @font-face {
+        font-family: 'Archer Bold';
+        src: url('fonts/archerpro-bold.eot');
+        src: url('fontsarcherpro-bold?#iefix') format('embedded-opentype'),
+             url('fonts/archerpro-bold.woff') format('woff'),
+             url('fonts/archerpro-bold.ttf') format('truetype'),
+             url('fonts/archerpro-bold.svg') format('svg');
+        font-style: normal;
 
-}
-@font-face {
-    font-family: 'Archer Bold Italic';
-    src: url('fonts/archerpro-boldita.eot');
-    src: url('fonts/archerpro-boldita?#iefix') format('embedded-opentype'),
-         url('fonts/archerpro-boldita.woff') format('woff'),
-         url('fonts/archerpro-boldita.ttf') format('truetype'),
-         url('fonts/archerpro-boldita.svg') format('svg');
-    font-weight: bold;
-    font-style: normal;
+    }
+    @font-face {
+        font-family: 'Archer Bold Italic';
+        src: url('fonts/archerpro-boldita.eot');
+        src: url('fonts/archerpro-boldita?#iefix') format('embedded-opentype'),
+             url('fonts/archerpro-boldita.woff') format('woff'),
+             url('fonts/archerpro-boldita.ttf') format('truetype'),
+             url('fonts/archerpro-boldita.svg') format('svg');
+        font-weight: bold;
+        font-style: normal;
 
-}
-@font-face {
-    font-family: 'Archer SemiBold';
-    src: url('fonts/archerpro-semibold.eot');
-    src: url('fonts/archerpro-semibold.eot?#iefix') format('embedded-opentype'),
-         url('fonts/archerpro-semibold.woff') format('woff'),
-         url('fonts/archerpro-semibold.ttf') format('truetype'),
-         url('fonts/archerpro-semibold.svg') format('svg');
-    font-style: normal;
+    }
+    @font-face {
+        font-family: 'Archer SemiBold';
+        src: url('fonts/archerpro-semibold.eot');
+        src: url('fonts/archerpro-semibold.eot?#iefix') format('embedded-opentype'),
+             url('fonts/archerpro-semibold.woff') format('woff'),
+             url('fonts/archerpro-semibold.ttf') format('truetype'),
+             url('fonts/archerpro-semibold.svg') format('svg');
+        font-style: normal;
 
-}
-@font-face {
-    font-family: 'Archer SemiBold Italic';
-    src: url('fonts/archerpro-semiboldita.eot');
-    src: url('fonts/archerpro-semiboldita.eot?#iefix') format('embedded-opentype'),
-         url('fonts/archerpro-semiboldita.woff') format('woff'),
-         url('fonts/archerpro-semiboldita.ttf') format('truetype'),
-         url('fonts/archerpro-semiboldita.svg') format('svg');
-    font-weight: italic;
-    font-style: normal;
+    }
+    @font-face {
+        font-family: 'Archer SemiBold Italic';
+        src: url('fonts/archerpro-semiboldita.eot');
+        src: url('fonts/archerpro-semiboldita.eot?#iefix') format('embedded-opentype'),
+             url('fonts/archerpro-semiboldita.woff') format('woff'),
+             url('fonts/archerpro-semiboldita.ttf') format('truetype'),
+             url('fonts/archerpro-semiboldita.svg') format('svg');
+        font-weight: italic;
+        font-style: normal;
 
-}
+    }
 
 
 /* #Basic Styles
@@ -149,201 +150,128 @@ INDEX:
 /* #Typography
 ================================================== */
 
-p {
-	font-family: "Archer Medium", serif;
-	font-size: 18px;
-    color:#373C42;
-    line-height:1.3em;
-}
-/* section headlines */
-h1 {
-    font-family:'Archer SemiBold', serif;
-    font-size:60px;
-    color:#373C42;
-    text-align: center;
-    text-transform: lowercase;
-    padding: 90px 20px;
-}
-/* our names */
-h2{
-    font-family:'Archer SemiBold', serif;
-    text-transform: lowercase;
-    font-size:60px;
-    color:#21A39D;
-}
-/* subheadlines */
-h3{
-    font-family:'Archer SemiBold Italic', serif;
-    font-size:35px;
-    color:#85CCAB;
-}
-/* headlines within sections ex. mobile, web dev, etc. */
-h4{
-    font-family:'Archer SemiBold Italic', serif;
-    font-size:35px;
-    color:#F1F1F2;
-    padding-bottom:6px;
-}
-
-h5{
-    font-family:'Archer SemiBold', serif;
-    font-size:55px;
-    color:#F1F1F2;
-    padding-bottom:20px;
-}
-/* contact area gets it's own styles because they are all different hooray */
-#contact p{
-    color:#F1F1F2;
-}
-/* get in touch */
-#contact h1{
-    font-family:'Archer SemiBold', serif;
-    font-size:55px;
-    color:#F1F1F2;
-}
-
-#contact h2{
-
-}
-
-
-/* #Links
-================================================== */
-
-
-/* #Scroll Bar
-================================================== */
-
-
-
-
-
-/* #Images
-================================================== */
-
-
-
-/* #Buttons
-================================================== */
-
-
-
-/* #Forms
-================================================== */
-
-
-/* #Media Queries
-================================================== */
-
-	/* Smaller than standard 960 (devices and browsers) */
-	@media only screen and (max-width: 959px) {
-        
-      
+    p {
+    	font-family: "Archer Medium", serif;
+    	font-size: 18px;
+        color:#373C42;
+        line-height:1.3em;
+    }
+    /* section headlines */
+    h1 {
+        font-family:'Archer SemiBold', serif;
+        font-size:60px;
+        color:#373C42;
+        text-align: center;
+        text-transform: lowercase;
+        padding: 90px 20px;
+    }
+    /* our names */
+    h2{
+        font-family:'Archer SemiBold', serif;
+        text-transform: lowercase;
+        font-size:60px;
+        color:#21A39D;
+    }
+    /* subheadlines */
+    h3{
+        font-family:'Archer SemiBold Italic', serif;
+        font-size:35px;
+        color:#85CCAB;
+    }
+    /* headlines within sections ex. mobile, web dev, etc. */
+    h4{
+        font-family:'Archer SemiBold Italic', serif;
+        font-size:35px;
+        color:#F1F1F2;
+        padding-bottom:6px;
     }
 
-	/* Tablet Portrait size to standard 960 (devices and browsers) */
-	@media only screen and (min-width: 768px) and (max-width: 959px) {
-
-
-
-    }
-
-	/* All Mobile Sizes (devices and browser) */
-	@media only screen and (max-width: 767px) {
-       
-    }
-
-	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-	@media only screen and (min-width: 480px) and (max-width: 767px) {
-
-}
-
-	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-	@media only screen and (max-width: 479px) {
-        h1{
-            font-size:50px;
-        }
+    h5{
+        font-family:'Archer SemiBold', serif;
+        font-size:55px;
+        color:#F1F1F2;
+        padding-bottom:20px;
     }
 
 
 /* #Nav 
 ================================================== */
 
-#nav-container{
-    height:40px;
-    width:100%;
-    background-color:#373C42;
-    position:fixed;
-    z-index:50;
-}
+    #nav-container{
+        height:40px;
+        width:100%;
+        background-color:#373C42;
+        position:fixed;
+        z-index:50;
+    }
 
-#nav{
-    width:100%;
-    max-width:1000px;
-    margin:0px auto;
-    padding-left:2.5%;
-    padding-right:2.5%;
-    min-width:320px;
-}
+    #nav{
+        width:100%;
+        max-width:1000px;
+        margin:0px auto;
+        padding-left:2.5%;
+        padding-right:2.5%;
+        min-width:320px;
+    }
 
-#nav li{
-    float:left;
-    padding-top:7px;
-    width:19%;
-} 
+    #nav li{
+        float:left;
+        padding-top:7px;
+        width:19%;
+    } 
 
-#nav li[class="navlogo"]{
-    width:192px;
-    background-repeat:no-repeat;
-} 
+    #nav li[class="navlogo"]{
+        width:192px;
+        background-repeat:no-repeat;
+    } 
 
 
-#navlogo {
-    position: relative;
-    z-index: 31;
-    width:190px;
-    height:20px;
-    margin-top:10px;
-    float:left;
-    background: url(../images/ukrave-nav-logo.png);
-    display:block;
-    position:relative;
-    z-index:50;
-}
+    #navlogo {
+        position: relative;
+        z-index: 31;
+        width:190px;
+        height:20px;
+        margin-top:10px;
+        float:left;
+        background: url(../images/ukrave-nav-logo.png);
+        display:block;
+        position:relative;
+        z-index:50;
+    }
 
-.navlogo a{
-    width:190px;
-    height:20px;
-    display:block;
-}
+    .navlogo a{
+        width:190px;
+        height:20px;
+        display:block;
+    }
 
-#nav a{
-    text-decoration:none;
-    color:#F1F1F2;
-    font-family: "Archer Medium", serif;
-    font-size:24px;
-    -webkit-transition:color .5s ease-in-out;  
-       -moz-transition:color .5s ease-in-out;  
-          -o-transition:color .5s ease-in-out;  
-             transition:color .5s ease-in-out; 
-}
+    #nav a{
+        text-decoration:none;
+        color:#F1F1F2;
+        font-family: "Archer Medium", serif;
+        font-size:24px;
+        -webkit-transition:color .5s ease-in-out;  
+           -moz-transition:color .5s ease-in-out;  
+              -o-transition:color .5s ease-in-out;  
+                 transition:color .5s ease-in-out; 
+    }
 
-#nav a:hover{
-    color:#21A39D
-}
+    #nav a:hover{
+        color:#21A39D
+    }
 
-.right-web{
-    text-align: right;
-}
-.right-always{
-    text-align:right;
-}
+    .right-web{
+        text-align: right;
+    }
+    .right-always{
+        text-align:right;
+    }
 
-#mobilenav{
-    margin-top:-221px;
-    display:none;
+    #mobilenav{
+        margin-top:-221px;
+        display:none;
 
-}
+    }
 
     @media only screen and (max-width: 900px) {
         .right-always{
@@ -377,9 +305,9 @@ h5{
             border-bottom: 1px solid #85CCAB;
             width:100%;
             -webkit-transition:background-color .5s ease-in-out;  
-               -moz-transition:background-color .5s ease-in-out;  
-                  -o-transition:background-color .5s ease-in-out;  
-                     transition:background-color .5s ease-in-out;  
+            -moz-transition:background-color .5s ease-in-out;  
+            -o-transition:background-color .5s ease-in-out;  
+            transition:background-color .5s ease-in-out;  
     }
 
     #mobilenav li:hover{
@@ -454,71 +382,62 @@ h5{
 /* #Top Section
 ================================================== */
 
-#topsection{
-    padding: 20px 0;
-    width: 100%;
-    background: #21A39D;
-    height:700px;
-}
-
-#top_chevron {
-    position:absolute;
-    width:100%;
-    background: url(../images/chevron.png) repeat-x;
-    height:360px;
-    margin-top: 90px;
-    min-width: 320px;
-}
-
-#top_bigcircle_logo {
-    position: relative;
-    background: url(../images/bigcirclelogo.png) no-repeat;
-    background-position: top;
-    background-size: 100%;
-    height:505px;
-    margin: 60px auto;
-    min-width: 200px;
-    max-width: 505px;
-
-}
-
-#top_bigcircle_centerer{
-    max-width: 560px;
-    padding:0px 20%;
-    margin: 0 auto;
-}
-
-    /* Smaller than standard 960 (devices and browsers) */
-    @media only screen and (max-width: 959px) {
+    #topsection{
+        padding: 20px 0;
+        width: 100%;
+        background: #21A39D;
+        height:700px;
     }
-    /* Tablet Portrait size to standard 960 (devices and browsers) */
-    @media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    #top_chevron {
+        position:absolute;
+        width:100%;
+        background: url(../images/chevron.png) repeat-x;
+        height:360px;
+        margin-top: 90px;
+        min-width: 320px;
+    }
+
+    #top_bigcircle_logo {
+        position: relative;
+        background: url(../images/bigcirclelogo.png) no-repeat;
+        background-position: top;
+        background-size: 100%;
+        height:505px;
+        margin: 60px auto;
+        min-width: 200px;
+        max-width: 505px;
 
     }
 
-    /* All Mobile Sizes (devices and browser) */
-    @media only screen and (max-width: 767px) {
+    #top_bigcircle_centerer{
+        max-width: 560px;
+        padding:0px 20%;
+        margin: 0 auto;
     }
 
-    /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-    @media only screen and (min-width: 480px) and (max-width: 767px) {
+        /* Smaller than standard 960 (devices and browsers) */
+        @media only screen and (max-width: 959px) {}
+        /* Tablet Portrait size to standard 960 (devices and browsers) */
+        @media only screen and (min-width: 768px) and (max-width: 959px) {}
 
-    }
+        /* All Mobile Sizes (devices and browser) */
+        @media only screen and (max-width: 767px) {}
 
-    @media only screen and (max-width: 800px) {
-        #top_chevron{
-            background-size:15%;
-            background-position: top;
-            margin-top: 5%;
+        /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+        @media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+        @media only screen and (max-width: 800px) {
+            #top_chevron{
+                background-size:15%;
+                background-position: top;
+                margin-top: 5%;
+            }
+
         }
 
-    }
-
-    /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-    @media only screen and (max-width: 479px) {
-
-
-    }
+        /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+        @media only screen and (max-width: 479px) {}
 
 
 /* #About Section
@@ -631,7 +550,7 @@ h5{
 }
 
 #ally_photo {
-    background: url(https://sphotos-a.xx.fbcdn.net/hphotos-snc6/184069_2279636157393_2615079_n.jpg) 10%, #21A39D;
+    background: url("../images/ally.jpg") 10%, #21A39D;
     z-index:1;
     background-position:left; 
     position:relative;
@@ -685,38 +604,6 @@ h5{
 #instagram{background-position: -263px -5px}
 #instagram:hover{background-position: -263px -43px}
 
-@media (min–moz-device-pixel-ratio: 1.5),
-(-o-min-device-pixel-ratio: 3/2),
-(-webkit-min-device-pixel-ratio: 1.5),
-(min-resolution: 1.5dppx) { 
-
-.socialicons_sm div {
-    height:34px;
-    width: 34px;
-    margin: 0 5px 0 0;
-    background: url(../images/icons@2x.png);
-    background-size:326px auto;
-    float:left;
-}
-
-#allyp{background-position: -182px -5px}
-#allyp:hover{background-position: -182px -40px}
-#dribbble{background-position: -218px -5px}
-#dribbble:hover{background-position: -218px -40px}
-#flickr{background-position: -253px -5px}
-#flickr:hover{background-position: -253px -40px}
-#behance{background-position: -112px -5px}
-#behance:hover{background-position: -112px -40px}
-#twitter{background-position: -148px -5px}
-#twitter:hover{background-position: -148px -40px}
-#unak{background-position: -5px -5px}
-#unak:hover{background-position: -5px -40px}
-#instagram{background-position: -42px -5px}
-#instagram:hover{background-position: -42px -40px}
-#rss{background-position: -75px -5px}
-#rss:hover{background-position: -75px -40px}
-
-}
 
     /* Smaller than standard 960 (devices and browsers) */
     @media only screen and (max-width: 959px) {
@@ -996,17 +883,42 @@ h5{
 
 
 /* CONTACT FORM STUFF */
+#contact-arrow-container{
+    max-width:900px;
+    width:100%;
+    margin:0px auto;
+}
+#contact-arrow{
+            width: 0; 
+            height: 0; 
+            border-left: 40px solid transparent;
+            border-right: 40px solid transparent;
+            border-bottom: 40px solid #373C42;
+
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -o-transform:rotate(0deg);
+            transform: rotate(0deg);
+            margin-top:-40px;
+}
 
 #contactsection{
     background-color: #373C42;
 
 }
+#contact-container{
+    max-width:900px;
+    margin:0px auto;
+    width:100%;
+    padding-bottom:40px;
+}
 
 #contactform{
 margin:0px auto;
-max-width:860px;
+max-width:900px;
 min-height:200px;
-padding:30px;
+padding-top:90px;
 }
 
     #contactform div {
@@ -1020,22 +932,29 @@ padding:30px;
     text-align:left;
     font-family:'Archer SemiBold', serif;
     color:#F1F1F2;
-    padding:0;
+    padding:0px;
     }
 
     #contactform h2{
       font-family: "Archer Medium Italic";
       font-size: 35px;
       color:#F1F1F2;
+      padding-top:20px;
+      padding-bottom:20px;
     }
 
-    #contactform p{
-    }
 
         #contactform p[rel="message"]{
           float:right;
-        }
+        } 
 
+    a.submittext{
+        font-family: "Archer Bold", serif;
+        font-size: 35px;
+        color:#F59798;
+        text-decoration:none;
+        padding-left:72%;
+            }
 /** we remove the red glow around required fields since we are already using the red star */
 input:required, textarea:required { 
     -moz-box-shadow:none;  
@@ -1085,9 +1004,7 @@ input:not([type="submit"]){
 height: 20px;
 }
 
-input[type="submit"]{
-    margin: -300px 0 0 75%;
-}
+
 
 /* placeholder */
 ::-webkit-input-placeholder  { 
@@ -1100,8 +1017,8 @@ color:#21A39D;
 font-style:italic;
 } 
 textarea{
-min-height:150px;
-resize:vertical
+min-height:203px;
+resize:vertical;
 }
 
 #contactform .message {
@@ -1143,21 +1060,53 @@ color:#E5224C;
 }
 
 
+/*twitters*/
 
-
-
-
-
-
-.events 
-{
-   margin: 10px 0;
+#twit-container { 
+    
+    width: 400px; 
+    float: left;
+    margin-top:20px;
+    
 }
-.events p
-{
-    font-size: 0.9em;
-    padding-top: 3px;
+
+a.big{
+    font-family: "Archer Bold", serif;
+    font-size: 35px;
+    color:#F59798;
+    text-decoration:none;
+    padding-left:70%;
 }
+
+ul#twitter_update_list { 
+    list-style: none; 
+    font-family: "Archer Medium", serif;
+    font-size: 18px;
+    color:#ffffff;
+    line-height:1.3em;
+}
+ul#twitter_update_list li { 
+    padding-bottom:20px;    
+}
+
+ul#twitter_update_list a{
+    color:#85CCAB;
+    text-decoration:none;
+}
+
+#wordpress-container{
+    width:400px;
+    float:right;
+    background-color: red;
+    height:400px;
+        margin-top:20px;
+
+}
+
+
+
+
+
 
 
 
