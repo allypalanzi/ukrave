@@ -605,6 +605,40 @@ INDEX:
 #instagram:hover{background-position: -263px -43px}
 
 
+@media (min–moz-device-pixel-ratio: 1.5),
+(-o-min-device-pixel-ratio: 3/2),
+(-webkit-min-device-pixel-ratio: 1.5),
+(min-resolution: 1.5dppx) { 
+
+.socialicons_sm div {
+    height:34px;
+    width: 34px;
+    margin: 0 5px 0 0;
+    background: url(../images/icons@2x.png);
+    background-size:326px auto;
+    float:left;
+}
+
+#allyp{background-position: -182px -5px}
+#allyp:hover{background-position: -182px -40px}
+#dribbble{background-position: -218px -5px}
+#dribbble:hover{background-position: -218px -40px}
+#flickr{background-position: -253px -5px}
+#flickr:hover{background-position: -253px -40px}
+#behance{background-position: -112px -5px}
+#behance:hover{background-position: -112px -40px}
+#twitter{background-position: -148px -5px}
+#twitter:hover{background-position: -148px -40px}
+#unak{background-position: -5px -5px}
+#unak:hover{background-position: -5px -40px}
+#instagram{background-position: -42px -5px}
+#instagram:hover{background-position: -42px -40px}
+#rss{background-position: -75px -5px}
+#rss:hover{background-position: -75px -40px}
+
+}
+
+
     /* Smaller than standard 960 (devices and browsers) */
     @media only screen and (max-width: 959px) {
 
