@@ -1,13 +1,15 @@
 // ************** NAV ***************//
-/*$(function (){
-$('.mobilelink').click(function(){
-  $('#navarrow').css('margin-top','-221px');
-});
-}); */
 
 $(function (){
   $('.dd').click(function(){
     $('#mobilenav').css('margin-top','-221px');
+    $("#navarrow").css({
+    '-webkit-transform': 'rotate(0deg)',
+    '-moz-transform': 'rotate(0deg)',
+    '-ms-transform': 'rotate(0deg)',
+    '-o-transform': 'rotate(0deg)',
+    'transform': 'rotate(0deg)',
+    });
   });
 }); 
 

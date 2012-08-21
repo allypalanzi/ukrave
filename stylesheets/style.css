@@ -203,6 +203,10 @@ INDEX:
         background-color:#373C42;
         position:fixed;
         z-index:50;
+        box-shadow: 0px 2px 8px #111;
+            -moz-box-shadow: 0px 2px 8px #111;
+                -webkit-box-shadow: 0px 2px 8px #111;
+        
     }
 
     #nav{
@@ -270,6 +274,7 @@ INDEX:
     #mobilenav{
         margin-top:-221px;
         display:none;
+        box-shadow: 0px 2px 8px #111;
 
     }
 
@@ -446,6 +451,7 @@ INDEX:
 #aboutsection{
     width: 100%;
     background: url(../images/noisebg.png),#F1F1F2;
+    box-shadow: 2px 2px 30px #111;
 }
 
     #aboutsection p{
@@ -465,6 +471,7 @@ INDEX:
 
 
 .aboutus_photo {
+    box-shadow: inset 0px 0px 20px #111; /*questionable */
     border-radius: 50%;
     position: relative;
     cursor: default;
@@ -788,12 +795,15 @@ a.tooltip:hover span{
     background: url(../images/chevron-teal.png), repeat-x;
     height:37px;
     margin-top:-37px;
+    z-index:1;
+    position:relative;
 }
 
     #we-make-container{
         width:100%;
         background-color:#21A39D;
         padding-bottom:60px;
+        box-shadow: 0px 0px 100px #222;
     }
 
     #we-make{
@@ -924,11 +934,14 @@ a.tooltip:hover span{
     background: url(../images/chevron-mint.png), repeat-x;
     height:37px;
     margin-top:-37px;
+    z-index:1;
+    position:relative;
     }
 
     #gallery-container{
         width:100%;
         background-color:#85CCAB;
+        box-shadow: 0px 0px 100px #222;
     }
 
     #gallery{
