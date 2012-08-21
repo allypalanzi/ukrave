@@ -1,6 +1,19 @@
+// ************** NAV ***************//
+/*$(function (){
 $('.mobilelink').click(function(){
   $('#navarrow').css('margin-top','-221px');
 });
+}); */
+
+$(function (){
+  $('.dd').click(function(){
+    $('#mobilenav').css('margin-top','-221px');
+  });
+}); 
+
+
+// ************** END NAV ***************//
+
 
 // ************** SMOOTH SCROLL ***************//
 
@@ -40,7 +53,7 @@ jQuery.fn.anchorAnimate = function(settings) {
 
 
 
-//************ Mobile Nav Pulldown *********************//
+//************ Mobile Nav Pulldown Arrow *********************//
 $(function (){
   $('#mobilenavbutton').toggle(function(){
     $('#mobilenav').css('margin-top','0px');
@@ -59,9 +72,11 @@ $(function (){
     '-ms-transform': 'rotate(0deg)',
     '-o-transform': 'rotate(0deg)',
     'transform': 'rotate(0deg)',
+    });
   });
 });
-  });
+
+
 //************ Hovers for Our Photos *********************//
 
 $(function (){
