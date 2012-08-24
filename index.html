@@ -30,7 +30,6 @@
   ================================================== -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
 	<script src="js/functions.js"></script>
-	<script src="js/swipe.js"></script>
 
 
 	<!--[if lt IE 9]>
@@ -309,7 +308,7 @@
 				<div class="icon-container">
 				<div class="icon"><img src="images/identity.png"></div>
 					<div class="icon-text">
-						<center><h4>branding/identity</h4></center>
+						<center><h4>branding / identity</h4></center>
 						<p>Identity is key in how a company makes an impression. We work with you to develop or refine your perfect color story, logo, and overall aesthetic</p>
 					</div>
 				</div>
@@ -420,9 +419,9 @@
 
 
 
-$("h1").fitText(1.2, { minFontSize: '20px', maxFontSize: '60px' });
+$("h1").fitText(1.2, { minFontSize: '40px', maxFontSize: '60px' });
 		$("#fittext2").fitText(1.2);
-		$("#fittext3").fitText(1.1, { minFontSize: 50, maxFontSize: '75px' });
+		$("#fittext3").fitText(1.1, { minFontSize: '50px', maxFontSize: '75px' });
 
 
 

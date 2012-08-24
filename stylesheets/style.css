@@ -368,7 +368,7 @@ INDEX:
             height: 0; 
             border-left: 15px solid transparent;
             border-right: 15px solid transparent;
-            border-top: 15px solid #85CCAB;
+            border-top: 15px solid #21A39D;
             margin-top: 10px;
             position:absolute;
             -webkit-transform: rotate(0deg);
@@ -760,6 +760,10 @@ a.tooltip:hover span{
         #topsection{
             height:748px;
         }
+        #ally_photo {
+            background-size:200%;
+        }
+
     }
 
     /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
@@ -1248,6 +1252,10 @@ ul#twitter_update_list li {
 ul#twitter_update_list a{
     color:#85CCAB;
     text-decoration:none;
+}
+
+ul#twitter_update_list a:hover{
+    color:#F5917D;
 }
 
 #wordpress-container{
