@@ -454,7 +454,7 @@ INDEX:
 
 #aboutsection{
     width: 100%;
-    background: url(../images/noise_lines.png),#F1F1F2;
+    background: url(../images/grid_noise.png),#F1F1F2;
         box-shadow: 0px 0px 50px #353434;
          -moz-box-shadow:0px 0px 50px #353434;  
         -webkit-box-shadow:0px 0px 50px #353434;  
@@ -965,7 +965,7 @@ a.tooltip:hover span{
 ================================================== */
 
     #gallery-chevron{
-    background: url(../images/chevron-mint.png), repeat-x;
+    background: url(../images/chevron-mint_circle.png), repeat-x;
     height:37px;
     margin-top:-37px;
     z-index:1;
@@ -973,7 +973,7 @@ a.tooltip:hover span{
     }
 
     #gallery-container{
-        background: url(../images/noise_lines_mint.png);
+        background: url(../images/stacked_circles.png);
         width:100%;
         background-color:#85CCAB;
         box-shadow: 0px 0px 100px #222;
