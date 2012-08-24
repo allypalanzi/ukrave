@@ -211,8 +211,8 @@ INDEX:
         position:fixed;
         z-index:50;
         box-shadow: 0px 2px 8px #111;
-            -moz-box-shadow: 0px 2px 8px #111;
-                -webkit-box-shadow: 0px 2px 8px #111;
+        -moz-box-shadow: 0px 2px 8px #111;
+        -webkit-box-shadow: 0px 2px 8px #111;
         
     }
 
@@ -395,6 +395,7 @@ INDEX:
         width: 100%;
         background: #21A39D;
         height:700px;
+        background: url(../images/noise_lines_teal.png);
     }
 
     #top_chevron {
@@ -453,9 +454,11 @@ INDEX:
 
 #aboutsection{
     width: 100%;
-    background: url(../images/noisebg.png),#F1F1F2;
-    box-shadow: 0px 0px 30px #111;
-}
+    background: url(../images/noise_lines.png),#F1F1F2;
+        box-shadow: 0px 0px 50px #353434;
+         -moz-box-shadow:0px 0px 50px #353434;  
+        -webkit-box-shadow:0px 0px 50px #353434;  
+        -o-box-shadow:0px 0px 50px #353434; }
 
     #aboutsection p{
         font-family: "Archer Semibold", serif;
@@ -706,8 +709,10 @@ a.tooltip:hover span{
     font-family: 'Archer Medium Italic';
     display:inline; 
     position:absolute; color:#fff;
-  background:#373C42;
+    background:#373C42;
     opacity: 0.9;
+        z-index:5;
+
 }
 
 
@@ -824,6 +829,11 @@ a.tooltip:hover span{
         background-color:#21A39D;
         padding-bottom:60px;
         box-shadow: 0px 0px 100px #222;
+        -moz-box-shadow:0px 0px 100px #222;  
+        -webkit-box-shadow:0px 0px 100px #222;  
+        -o-box-shadow:0px 0px 100px #222; 
+        background: url(../images/noise_lines_teal.png);
+
     }
 
     #we-make{
@@ -959,10 +969,14 @@ a.tooltip:hover span{
     }
 
     #gallery-container{
+        background: url(../images/noise_lines_mint.png);
         width:100%;
         background-color:#85CCAB;
         box-shadow: 0px 0px 100px #222;
-    }
+        -moz-box-shadow:0px 0px 100px #222;  
+        -webkit-box-shadow:0px 0px 100px #222;  
+        -o-box-shadow:0px 0px 100px #222; 
+     }
 
     #gallery{
         max-width:1020px;
@@ -1005,25 +1019,38 @@ a.tooltip:hover span{
         max-width:900px;
         width:100%;
         margin:0px auto;
+
+
     }
     #contact-arrow{
-                width: 0; 
+    background: url(../images/triangle.png);
+    background-repeat:no-repeat;
+    height:37px;
+    margin-top:-37px;
+    z-index:1;
+    position:relative;
+}
+                /*width: 0; 
                 height: 0; 
                 border-left: 40px solid transparent;
                 border-right: 40px solid transparent;
                 border-bottom: 40px solid #373C42;
-
+                background: url(../images/noise_lines_gray.png);
                 -webkit-transform: rotate(0deg);
                 -moz-transform: rotate(0deg);
                 -ms-transform: rotate(0deg);
                 -o-transform:rotate(0deg);
                 transform: rotate(0deg);
-                margin-top:-40px;
-    }
+                margin-top:-40px;*/
+    
 
     #contactsection{
         background-color: #373C42;
-        box-shadow: 0px 0px 30px #111;
+        box-shadow: 0px 0px 15px #202020;
+         -moz-box-shadow:0px 0px 15px #202020;  
+        -webkit-box-shadow:0px 0px 15px #202020;  
+        -o-box-shadow:0px 0px 15px #202020;  
+        background: url(../images/noise_lines_gray.png);
 
     }
 
@@ -1269,27 +1296,19 @@ ul#twitter_update_list a{
             width:70%;
             margin:0 15%;
         }
-
-    }
+    
     p[rel="message"]{width:100%;
         margin-top:0px auto;
     }
 
-        #contact-arrow{
-                width: 0; 
-                height: 0; 
-                border-left: 20px solid transparent;
-                border-right: 20px solid transparent;
-                border-bottom: 20px solid #373C42;
+    a.submittext{
+        font-size: 25px;
+    }
 
-                -webkit-transform: rotate(0deg);
-                -moz-transform: rotate(0deg);
-                -ms-transform: rotate(0deg);
-                -o-transform:rotate(0deg);
-                transform: rotate(0deg);
-                margin-top:-20px;
-                margin-left:10px;
-            }
+    a.big{
+        font-size: 25px;
+    }
+
     }
     
 

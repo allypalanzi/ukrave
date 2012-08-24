@@ -286,7 +286,7 @@
 				<div class="icon"><img src="images/wordpress.png"></div>
 					<div class="icon-text">
 						<center><h4>wordpress</h4></center>
-						<p>Wordpress bridges the gap between design and usability. We can build your website on this popular platform so you can update it at any time.</p>
+						<p>Wordpress bridges the gap between design and usability. We can build your website on this platform so you can update it at any time.</p>
 					</div>
 				</div>
 
@@ -352,7 +352,11 @@
 	<div id="contact-container">
 
  <div id="contactform">
-       <h1> get in touch! </h1>
+       <h1> get in touch! </h1> 
+
+
+
+
        <h2>we’d love to start a project with you! send us an email or fill out the form below. we promise to contact you back.</h2>
         
             <form method='post' action='contact.php' id='form' autocomplete="on" >
