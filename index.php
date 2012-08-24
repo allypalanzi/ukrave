@@ -16,6 +16,12 @@
   ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+	<!-- Wordpress Blog Linkage
+  ================================================== -->
+	<?php
+	require('/blog/wp-blog-header.php');
+	query_posts('showposts=1'); ?>
+
 	<!-- CSS
   ================================================== -->
 	<link rel="stylesheet" href="stylesheets/style.css">
@@ -37,6 +43,7 @@
 	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
 </head>
 
 
@@ -360,7 +367,7 @@
 			<p> <label for="website" class="link"> Website </label> <input type="text" name="website" id="website"  placeholder="We'd love to check it out" /> </p>
 		</div><br/>
 		<div> 
-			<p> <label for="subject" class="quote-alt"> Subject </label> <input type='text' name='subject'  placeholder="Something Creative" /> </p>
+			<p> <label for="subject" class="quote-alt"> Subject </label> <input type='text' name='subject'  placeholder="Be Creative!" /> </p>
 		</div><br/>
 		<div class="message"> 
 			<p rel="message"> <label for="message" class="comment"> Message  <span class="required">*</span></label> <textarea name='message' required id='message' placeholder="Now, go on :)" ></textarea> </p>
@@ -376,17 +383,23 @@
   <script type="text/javascript" src="http://twitter.com/statuses/user_timeline/ukravedesign.json?callback=twitterCallback2&count=3"></script>
   
 <div id="wordpress-container">
+	<h5>we write things:</h5>
 	    <div id="blogpost">
 		<?php while (have_posts()): the_post(); ?>
-		<h2><?php the_title(); ?></h2>
+		<h2 style="font-size:45px"><?php the_title(); ?></h2>
+		<h3 style="font-size:24px"><?php the_date(); ?> </h3>
 		<?php the_excerpt(); ?>
-		<p><a href="<?php the_permalink(); ?>">Read more...</a></p>
+		<p><br/><a class="big" style="padding-left:50%" href="<?php the_permalink(); ?>"> &raquo; read more</a></p>
 		<?php endwhile; ?>
 	</div>
 </div>
+
 <div class="clear"></div>
   </div>
 </div>
+
+
+
 
 <!-- END OF CONTACT SECTION
 	================================================== -->

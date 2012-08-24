@@ -150,6 +150,13 @@ INDEX:
 /* #Typography
 ================================================== */
 
+    a{
+        -webkit-transition:color .5s ease-in-out;  
+           -moz-transition:color .5s ease-in-out;  
+              -o-transition:color .5s ease-in-out;  
+                 transition:color .5s ease-in-out; 
+    }
+
     p {
     	font-family: "Archer Medium", serif;
     	font-size: 18px;
@@ -254,10 +261,6 @@ INDEX:
         color:#F1F1F2;
         font-family: "Archer Medium", serif;
         font-size:24px;
-        -webkit-transition:color .5s ease-in-out;  
-           -moz-transition:color .5s ease-in-out;  
-              -o-transition:color .5s ease-in-out;  
-                 transition:color .5s ease-in-out; 
     }
 
     #nav a:hover{
@@ -973,7 +976,7 @@ a.tooltip:hover span{
     }
 
         #gallery h1 a:hover{
-        color: #F5917D;
+        color: white;
     }
 
     /* Smaller than standard 960 (devices and browsers) */
@@ -1072,6 +1075,10 @@ a.tooltip:hover span{
         text-decoration:none;
         padding-left:72%;
             
+    }
+
+    a.submittext:hover{
+        color: #21A39D;
     }
 /** we remove the red glow around required fields since we are already using the red star */
     input:required, textarea:required { 
@@ -1182,7 +1189,7 @@ color:#E5224C;
 
 #twit-container { 
     
-    width: 400px; 
+    width: 45%; 
     float: left;
     margin-top:20px;
     
@@ -1194,6 +1201,10 @@ a.big{
     color:#F59798;
     text-decoration:none;
     padding-left:70%;
+}
+
+a.big:hover{
+    color:#21A39D;
 }
 
 ul#twitter_update_list { 
@@ -1214,11 +1225,14 @@ ul#twitter_update_list a{
 
 #wordpress-container{
     width:400px;
-    float:right;
-    background-color: red;
+    float:left;
     height:400px;
-        margin-top:20px;
+    margin-top:20px;
+    margin-left:60px
+}
 
+#wordpress-container p{
+    color: white;
 }
 
 
@@ -1229,16 +1243,33 @@ ul#twitter_update_list a{
     @media only screen and (min-width: 768px) and (max-width: 959px) {
     }
 
+    @media only screen and (max-width: 900px) {
+                #contactform{
+            width:80%;
+        }
+
+     #form input, #form label, #form textarea{
+
+            width:96%;
+        }
+    #contactform .message{
+        float:right;
+    }
+
+            #wordpress-container, #twit-container{
+            width:60%;
+            margin:0 20%;
+        }
+    }
+
     /* All Mobile Sizes (devices and browser) */
     @media only screen and (max-width: 767px) {
-            #contactform p[rel="message"]{
-         float:none;
-    } 
-    #contactform .message {
-        width: 100%;
-    }
-       #contactform div {
-        float:none;
+
+        #wordpress-container, #twit-container{
+            width:70%;
+            margin:0 15%;
+        }
+
     }
     p[rel="message"]{width:100%;
         margin-top:0px auto;
@@ -1258,8 +1289,9 @@ ul#twitter_update_list a{
                 transform: rotate(0deg);
                 margin-top:-20px;
                 margin-left:10px;
+            }
     }
-    }
+    
 
     /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
     @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -1268,7 +1300,44 @@ ul#twitter_update_list a{
     }
 
     /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-    @media only screen and (max-width: 479px) {
+    @media only screen and (max-width: 579px) {
+        h5{
+            font-size:45px;
+        }
+
+          #contactform{
+            width:80%;
+        }
+
+        p[rel="message"]{
+            float:none;
+            margin: 0 auto;
+        }
+
+
+        #contactform .message{
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .message{
+            width:100%;
+        }
+
+        #form div{
+            float:none;
+            width:100%;
+            margin:0 auto
+        }
+
+        .big{
+            margin-bottom:20px;
+        }
+
+        #wordpress-container, #twit-container{
+            width:80%;
+            margin:0 10%;
+        }
     }
 
 
