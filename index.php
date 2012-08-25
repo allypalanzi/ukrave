@@ -19,7 +19,7 @@
 	<!-- Wordpress Blog Linkage
   ================================================== -->
 	<?php
-	require('/blog/wp-blog-header.php');
+	require('blog/wp-blog-header.php');
 	query_posts('showposts=1'); ?>
 
 	<!-- CSS
@@ -79,6 +79,8 @@
 					<li><a href="#work" rel="" id="anchor1" class= "anchorLink dd">work</a></li>
 
 					<li><a href="#contact" rel="" id="anchor1" class= "anchorLink dd">contact</a></li>
+
+					<li><a href="blog" rel="" class= " dd">blog</a></li>
 				</ul>
 				</div>
 			</div>
@@ -180,8 +182,8 @@
 
 <div id="we-make-chevron"></div>
 	<div id="we-make-container">
+		<center><h1> we make some cool things.</h1></center>
 		<div id="we-make">
-				<center><h1> we make cool &amp; pretty things.</h1></center>
 
 		<!-- MOBILE SLIDER
 		================================================== -->
@@ -356,7 +358,7 @@
 
 
 
-       <h2>we’d love to start a project with you! send us an email or fill out the form below. we promise to contact you back.</h2>
+       <h2>we'd love to start a project with you! send us an email or fill out the form below. we promise to contact you back.</h2>
         
             <form method='post' action='contact.php' id='form' autocomplete="on" >
 
@@ -392,7 +394,7 @@
 		<h2 style="font-size:45px"><?php the_title(); ?></h2>
 		<h3 style="font-size:24px"><?php the_date(); ?> </h3>
 		<?php the_excerpt(); ?>
-		<p><br/><a class="big" style="padding-left:50%" href="<?php the_permalink(); ?>"> &raquo; read more</a></p>
+		<p><br/><a class="big blogread" href="<?php the_permalink(); ?>"> &raquo; read more</a></p>
 		<?php endwhile; ?>
 	</div>
 </div>
@@ -420,8 +422,6 @@
 
 
 $("h1").fitText(1.2, { minFontSize: '40px', maxFontSize: '60px' });
-		$("#fittext2").fitText(1.2);
-		$("#fittext3").fitText(1.1, { minFontSize: '50px', maxFontSize: '75px' });
 
 
 

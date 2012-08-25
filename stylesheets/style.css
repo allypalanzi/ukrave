@@ -275,7 +275,7 @@ INDEX:
     }
 
     #mobilenav{
-        margin-top:-221px;
+        margin-top:-231px;
         display:none;
         box-shadow: 0px 2px 8px #111;
 
@@ -454,7 +454,7 @@ INDEX:
 
 #aboutsection{
     width: 100%;
-    background: url(../images/grid_noise.png),#F1F1F2;
+    background: url(../images/bgnoise_lg.png),#F1F1F2;
         box-shadow: 0px 0px 50px #353434;
          -moz-box-shadow:0px 0px 50px #353434;  
         -webkit-box-shadow:0px 0px 50px #353434;  
@@ -641,7 +641,7 @@ INDEX:
         margin-top:10px;
         float:left;
         background: url(../images/ukrave-nav-logo@2x.png);
-        background-size:326px auto;
+        background-size:190px auto;
         display:block;
         position:relative;
         z-index:50;
@@ -1089,7 +1089,7 @@ a.tooltip:hover span{
     #contactform h2{
       font-family: "Archer Medium Italic";
       font-size: 35px;
-      color:#F1F1F2;
+      color:#21A39D;
       padding-top:20px;
       padding-bottom:20px;
     }
@@ -1300,6 +1300,8 @@ ul#twitter_update_list a:hover{
     /* All Mobile Sizes (devices and browser) */
     @media only screen and (max-width: 767px) {
 
+    h1 {padding: 60px 20px;}
+
         #wordpress-container, #twit-container{
             width:70%;
             margin:0 15%;
@@ -1317,6 +1319,10 @@ ul#twitter_update_list a:hover{
         font-size: 25px;
     }
 
+         #contactform h2{
+      font-size: 28px;
+    }
+
     }
     
 
@@ -1328,6 +1334,9 @@ ul#twitter_update_list a:hover{
 
     /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
     @media only screen and (max-width: 579px) {
+
+        h1{padding: 50px 20px;}
+
         h5{
             font-size:45px;
         }
@@ -1365,19 +1374,47 @@ ul#twitter_update_list a:hover{
             width:80%;
             margin:0 10%;
         }
+
     }
 
 
+    @media only screen and (max-width: 650px) {
+
+     #contactform h2{
+      font-size: 24px;
+    }
+    }
+
+        a.big.blogread{
+        padding-left:50%;
+    }
+
+    @media only screen and (max-width: 400px) {
+    
+    h1{padding: 40px 10px;}
+
+     #contactform h2{
+      font-size: 20px;
+    }
+
+    #contact-container{
+        padding-bottom:90px
+    }
+
+    }
 
 
+    @media only screen and (max-width: 350px) {
 
+    h5{
+      font-size: 40px;
+    }
 
+    a.big.blogread{
+        padding-left:45%;
+    }
 
-
-
-
-
-
+    }
 
 
 

@@ -2,7 +2,7 @@
 
 $(function (){
   $('.dd').click(function(){
-    $('#mobilenav').css('margin-top','-221px');
+    $('#mobilenav').css('margin-top','-231px');
     $("#navarrow").css({
     '-webkit-transform': 'rotate(0deg)',
     '-moz-transform': 'rotate(0deg)',
@@ -67,7 +67,7 @@ $(function (){
     'transform': 'rotate(180deg)',
   })},
     function(){
-    $('#mobilenav').css('margin-top','-221px');    
+    $('#mobilenav').css('margin-top','-231px');    
     $("#navarrow").css({
     '-webkit-transform': 'rotate(0deg)',
     '-moz-transform': 'rotate(0deg)',
